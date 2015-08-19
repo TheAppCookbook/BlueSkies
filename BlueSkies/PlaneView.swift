@@ -39,12 +39,23 @@ class PlaneView: MKAnnotationView {
         let endLocation = CLLocation(latitude: coordinate.latitude,
             longitude: coordinate.longitude)
         
+        let distance = fabs(startLocation.distanceFromLocation(endLocation))
+        let duration = NSTimeInterval(CGFloat(distance) / (speed * PlaneView.timeScale))
+
+        self.flyToCoordinate(coordinate,
+            duration: duration,
+            completion: completion)
+    }
+    
+    func flyToCoordinate(coordinate: CLLocationCoordinate2D, duration: NSTimeInterval, completion: () -> Void = {}) {
+        let startLocation = CLLocation(latitude: self.coordinate.latitude,
+            longitude: self.coordinate.longitude)
+        let endLocation = CLLocation(latitude: coordinate.latitude,
+            longitude: coordinate.longitude)
+        
         // Rotate. Rotate for 0%
         self.transform = CGAffineTransformMakeRotation(startLocation.headingToLocation(endLocation).toRadians())
         self.transform = CGAffineTransformScale(self.transform, 0.1, 0.1)
-        
-        let distance = fabs(startLocation.distanceFromLocation(endLocation))
-        let duration = NSTimeInterval(CGFloat(distance) / (speed * PlaneView.timeScale))
         
         // Travel. Move for 100%
         UIView.animateWithDuration(duration, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
@@ -56,7 +67,7 @@ class PlaneView: MKAnnotationView {
         // Scale. Up for 50%, back Down for 50%
         UIView.animateWithDuration(duration * 0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
             self.transform = CGAffineTransformScale(self.transform,
-                10.0, 10.0)
+                5.0, 5.0)
         }, completion: { (success: Bool) in
             UIView.animateWithDuration(duration * 0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
                 self.transform = CGAffineTransformScale(self.transform,

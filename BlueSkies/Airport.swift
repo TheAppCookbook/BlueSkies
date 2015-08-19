@@ -57,7 +57,7 @@ class Airport: NSObject, MKAnnotation {
             let location = CLLocation(latitude: $0.coordinate.latitude, longitude: $0.coordinate.longitude)
             let locationDistance = currentLocation.distanceFromLocation(location)
             
-            return locationDistance < distance
+            return locationDistance > (distance / 10.0) && locationDistance < distance
         }).random()!
     }
 }

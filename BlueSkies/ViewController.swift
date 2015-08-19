@@ -21,8 +21,12 @@ class ViewController: UIViewController {
     
 
     private var airports: [Airport] = []
-    private var exerciseStep: Int = 0
+    
     private var mapViewLoaded: Bool = false
+    private var fullyLoaded: Bool = false
+    
+    private var exerciseStep: Int = 0
+    private let numberOfExerciseSteps: Int = 6
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
@@ -31,71 +35,99 @@ class ViewController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        Airport.all { self.airports = $0 }
-        
-        if self.exerciseStep == 0 {
-            
-        } else {
-           self.introView.removeFromSuperview()
+        Airport.all {
+            self.airports = $0
+            if self.mapViewLoaded {
+                self.finalizeLoad()
+            }
         }
+        
+        if self.exerciseStep != 0 {
+            self.introView.removeFromSuperview()
+        }
+    }
+    
+    private func finalizeLoad() {
+        UIView.animateWithDuration(0.33) {
+            self.swipeInstructionLabel.alpha = 1.0
+        }
+        
+        self.fullyLoaded = true
     }
     
     // MARK: Responders
     @IBAction func swipeGestureWasRecognized(swipeGestureRecognizer: UISwipeGestureRecognizer!) {
-        if self.mapViewLoaded {
+        if !self.fullyLoaded { return }
+        
+        UIView.animateWithDuration(0.33, animations: {
+            var frame = self.introView.frame
+            frame.origin = CGPoint(x: frame.origin.x, y: -frame.size.height)
+            self.introView.frame = frame
+        }, completion: { (success: Bool) in
+            self.introView.removeFromSuperview()
             UIView.animateWithDuration(0.33) {
-                var frame = self.introView.frame
-                frame.origin = CGPoint(x: frame.origin.x, y: -frame.size.height)
-                self.introView.frame = frame
+                self.exerciseStepView.alpha = 1.0
             }
-        }
+            
+            if self.exerciseStep == 0 {
+                self.performNextExerciseStep()
+            }
+        })
     }
     
     // MARK: Exercise Handlers
     private func performNextExerciseStep() {
-        self.exerciseStep += 1
-        
-        let numberOfFlights: Int
-        switch self.exerciseStep {
-        case 1, 2, 6:
-            numberOfFlights = 1
-            
-        case 3, 5:
-            numberOfFlights = 2
-            
-        case 4:
-            numberOfFlights = 3
-            
-        default:
-            numberOfFlights = 0
+        if self.exerciseStep == self.numberOfExerciseSteps {
+            return
         }
         
-        var annotations: [MKAnnotation] = []
+        self.mapView.removeAnnotations(self.mapView.annotations)
+        
+        let duration = [4.0, 4.0, 6.0, 6.0, 8.0, 10.0][self.exerciseStep]
+        let numberOfFlights = [1, 1, 2, 3, 2, 1][self.exerciseStep]
+        
+        var airports: [Airport] = []
+        
+        var planes: [Plane] = []
+        var landedPlanes: [Plane] = []
+        
         for var flightIndex = 0; flightIndex < numberOfFlights; flightIndex++ {
             let firstAirport: Airport
-            if let lastAirport = annotations.first as? Airport {
+            if let lastAirport = airports.last {
                 firstAirport = lastAirport.airportWithinDistance(5_000_000)
             } else {
                 firstAirport = self.airports.random()!
             }
             
-            annotations.append(firstAirport)
+            airports.append(firstAirport)
             self.mapView.addAnnotation(firstAirport)
             
-            let secondAirport = firstAirport.airportWithinDistance(2_500_000)
-            annotations.append(secondAirport)
+            let secondAirport = firstAirport.airportWithinDistance(5_000_000)
+            airports.append(secondAirport)
             self.mapView.addAnnotation(secondAirport)
             
             let plane = Plane(coordinate: firstAirport.coordinate)
+            planes.append(plane)
             self.mapView.addAnnotation(plane)
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2.0 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
+            dispatch_after(2.0, dispatch_get_main_queue()) {
                 let planeView = self.mapView.viewForAnnotation(plane) as! PlaneView
-                planeView.flyToCoordinate(secondAirport.coordinate, speed: 200)
+                planeView.flyToCoordinate(secondAirport.coordinate, duration: duration) {
+                    landedPlanes.append(planeView.annotation as! Plane)
+                    
+                    if landedPlanes.count == planes.count {
+                        self.exerciseStepIndicators[self.exerciseStep].image = UIImage(named: "plane")
+                        
+                        dispatch_after(2.0, dispatch_get_main_queue()) {
+                            self.exerciseStep += 1
+                            self.performNextExerciseStep()
+                        }
+                    }
+                }
             }
         }
         
-        self.mapView.showAnnotations(annotations, animated: true)
+        self.mapView.showAnnotations(airports, animated: true)
     }
 }
 
@@ -148,9 +180,11 @@ extension ViewController: MKMapViewDelegate {
     func mapViewDidFinishRenderingMap(mapView: MKMapView!, fullyRendered: Bool) {
         UIView.animateWithDuration(1.33) {
             mapView.alpha = 1.0
-            self.swipeInstructionLabel.alpha = 1.0
         }
         
         self.mapViewLoaded = true
+        if self.airports.count > 0 {
+            self.finalizeLoad()
+        }
     }
 }

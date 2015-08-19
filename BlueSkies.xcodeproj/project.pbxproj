@@ -22,6 +22,7 @@
 		732FC35E1B84FDB500DB69A5 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC35D1B84FDB500DB69A5 /* Airport.swift */; };
 		732FC3641B85054500DB69A5 /* BlueSkyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3631B85054500DB69A5 /* BlueSkyMapView.swift */; };
 		732FC3661B85281600DB69A5 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3651B85281600DB69A5 /* ArrayExtensions.swift */; };
+		732FC36A1B85409000DB69A5 /* DispatchExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3691B85409000DB69A5 /* DispatchExtensions.swift */; };
 		E21C7215A1E227EC33892352 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F891DAEF7D89575AAD62825 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		732FC35D1B84FDB500DB69A5 /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		732FC3631B85054500DB69A5 /* BlueSkyMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueSkyMapView.swift; sourceTree = "<group>"; };
 		732FC3651B85281600DB69A5 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		732FC3691B85409000DB69A5 /* DispatchExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchExtensions.swift; sourceTree = "<group>"; };
 		C50428D52092EC54C67761A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 			children = (
 				732FC3551B84E60500DB69A5 /* LocationExtensions.swift */,
 				732FC3651B85281600DB69A5 /* ArrayExtensions.swift */,
+				732FC3691B85409000DB69A5 /* DispatchExtensions.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				732FC3561B84E60500DB69A5 /* LocationExtensions.swift in Sources */,
 				732FC3311B84E41E00DB69A5 /* ViewController.swift in Sources */,
 				732FC35C1B84FD1C00DB69A5 /* AirportView.swift in Sources */,
+				732FC36A1B85409000DB69A5 /* DispatchExtensions.swift in Sources */,
 				732FC35E1B84FDB500DB69A5 /* Airport.swift in Sources */,
 				732FC3531B84E5BF00DB69A5 /* Plane.swift in Sources */,
 				732FC3591B84E99100DB69A5 /* PlaneView.swift in Sources */,
