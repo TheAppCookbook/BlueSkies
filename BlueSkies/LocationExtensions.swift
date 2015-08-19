@@ -22,13 +22,11 @@ extension CLLocation {
         let lat2 = location.coordinate.latitude.toRadians()
         let lon2 = location.coordinate.longitude.toRadians()
         
-        let deltaLon = lon2 - lon1
-        let deltaLat = lat2 - lat1
+        let latDiff = lat2 - lat1
+        let lonDiff = lon2 - lon1
         
-        let y = sin(deltaLon) * cos(lat2)
-        let x = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(lon2)
-        
-        return atan2(y, x).toDegrees()
+        var angle = atan2(lonDiff, latDiff) * CGFloat(180.0 / M_PI)
+        return CLLocationDegrees(angle)
     }
 }
 

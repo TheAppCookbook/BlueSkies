@@ -40,8 +40,8 @@ class PlaneView: MKAnnotationView {
             longitude: coordinate.longitude)
         
         // Rotate. Rotate for 0%
-        self.transform = CGAffineTransformMakeRotation(-CGFloat(startLocation.headingToLocation(endLocation)))
-        self.transform = CGAffineTransformScale(self.transform, 0.8, 0.8)
+        self.transform = CGAffineTransformMakeRotation(startLocation.headingToLocation(endLocation).toRadians())
+        self.transform = CGAffineTransformScale(self.transform, 0.1, 0.1)
         
         let distance = fabs(startLocation.distanceFromLocation(endLocation))
         let duration = NSTimeInterval(CGFloat(distance) / (speed * PlaneView.timeScale))
@@ -56,11 +56,11 @@ class PlaneView: MKAnnotationView {
         // Scale. Up for 50%, back Down for 50%
         UIView.animateWithDuration(duration * 0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
             self.transform = CGAffineTransformScale(self.transform,
-                1.5, 1.5)
+                10.0, 10.0)
         }, completion: { (success: Bool) in
             UIView.animateWithDuration(duration * 0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
                 self.transform = CGAffineTransformScale(self.transform,
-                    0.5, 0.5)
+                    0.1, 0.1)
             }, completion: nil)
         })
         
