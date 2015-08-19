@@ -13,6 +13,11 @@
 		732FC3361B84E41E00DB69A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732FC3351B84E41E00DB69A5 /* Images.xcassets */; };
 		732FC3391B84E41E00DB69A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 732FC3371B84E41E00DB69A5 /* LaunchScreen.xib */; };
 		732FC3451B84E41E00DB69A5 /* BlueSkiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3441B84E41E00DB69A5 /* BlueSkiesTests.swift */; };
+		732FC34F1B84E46600DB69A5 /* airports.dat in Resources */ = {isa = PBXBuildFile; fileRef = 732FC34E1B84E46600DB69A5 /* airports.dat */; };
+		732FC3511B84E47C00DB69A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732FC3501B84E47C00DB69A5 /* MapKit.framework */; };
+		732FC3531B84E5BF00DB69A5 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3521B84E5BF00DB69A5 /* Plane.swift */; };
+		732FC3561B84E60500DB69A5 /* LocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3551B84E60500DB69A5 /* LocationExtensions.swift */; };
+		732FC3591B84E99100DB69A5 /* PlaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3581B84E99100DB69A5 /* PlaneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		732FC33E1B84E41E00DB69A5 /* BlueSkiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueSkiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		732FC3431B84E41E00DB69A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		732FC3441B84E41E00DB69A5 /* BlueSkiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSkiesTests.swift; sourceTree = "<group>"; };
+		732FC34E1B84E46600DB69A5 /* airports.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.dat; sourceTree = "<group>"; };
+		732FC3501B84E47C00DB69A5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		732FC3521B84E5BF00DB69A5 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		732FC3551B84E60500DB69A5 /* LocationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationExtensions.swift; sourceTree = "<group>"; };
+		732FC3581B84E99100DB69A5 /* PlaneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732FC3511B84E47C00DB69A5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +70,7 @@
 		732FC3201B84E41E00DB69A5 = {
 			isa = PBXGroup;
 			children = (
+				732FC3501B84E47C00DB69A5 /* MapKit.framework */,
 				732FC32B1B84E41E00DB69A5 /* BlueSkies */,
 				732FC3411B84E41E00DB69A5 /* BlueSkiesTests */,
 				732FC32A1B84E41E00DB69A5 /* Products */,
@@ -80,8 +92,12 @@
 				732FC32E1B84E41E00DB69A5 /* AppDelegate.swift */,
 				732FC3301B84E41E00DB69A5 /* ViewController.swift */,
 				732FC3321B84E41E00DB69A5 /* Main.storyboard */,
+				732FC3541B84E5C200DB69A5 /* Models */,
+				732FC35A1B84E99400DB69A5 /* Views */,
+				732FC3571B84E60800DB69A5 /* Categories */,
 				732FC3351B84E41E00DB69A5 /* Images.xcassets */,
 				732FC3371B84E41E00DB69A5 /* LaunchScreen.xib */,
+				732FC34E1B84E46600DB69A5 /* airports.dat */,
 				732FC32C1B84E41E00DB69A5 /* Supporting Files */,
 			);
 			path = BlueSkies;
@@ -110,6 +126,30 @@
 				732FC3431B84E41E00DB69A5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		732FC3541B84E5C200DB69A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				732FC3521B84E5BF00DB69A5 /* Plane.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		732FC3571B84E60800DB69A5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				732FC3551B84E60500DB69A5 /* LocationExtensions.swift */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		732FC35A1B84E99400DB69A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				732FC3581B84E99100DB69A5 /* PlaneView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +201,11 @@
 				TargetAttributes = {
 					732FC3281B84E41E00DB69A5 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					732FC33D1B84E41E00DB69A5 = {
 						CreatedOnToolsVersion = 6.4;
@@ -195,6 +240,7 @@
 				732FC3341B84E41E00DB69A5 /* Main.storyboard in Resources */,
 				732FC3391B84E41E00DB69A5 /* LaunchScreen.xib in Resources */,
 				732FC3361B84E41E00DB69A5 /* Images.xcassets in Resources */,
+				732FC34F1B84E46600DB69A5 /* airports.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732FC3561B84E60500DB69A5 /* LocationExtensions.swift in Sources */,
 				732FC3311B84E41E00DB69A5 /* ViewController.swift in Sources */,
+				732FC3531B84E5BF00DB69A5 /* Plane.swift in Sources */,
+				732FC3591B84E99100DB69A5 /* PlaneView.swift in Sources */,
 				732FC32F1B84E41E00DB69A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
