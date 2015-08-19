@@ -1,10 +1,10 @@
 PODS:
   - ACBInfoPanel (0.0.1)
-  - GradientView (2.0.3)
+  - CHCSVParser (2.1.0)
 
 DEPENDENCIES:
   - ACBInfoPanel (from `git@github.com:TheAppCookbook/templates.git`, branch `master`)
-  - GradientView
+  - CHCSVParser
 
 EXTERNAL SOURCES:
   ACBInfoPanel:
@@ -18,6 +18,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ACBInfoPanel: 186db7784366d9a331d406e02a9da58b61e1b55e
-  GradientView: 9234da5037b5ecf7a15f973e8da1efbd879abcd9
+  CHCSVParser: 3bcc7bdb72111a31222e95d57eacceefe4e537e8
 
 COCOAPODS: 0.38.2

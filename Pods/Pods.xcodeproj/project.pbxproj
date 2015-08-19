@@ -7,125 +7,166 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12FFE3A1E23853B9E6A8DC4DF2EB1311 /* ACBInfoPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71190522E0B8C2B31F23C47DD3F6F3B7 /* ACBInfoPanelViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1F51524DB6FE3A9F492D2034C85849CC /* ACBInfoPanelResources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FA7371E0BAF61624B1FC53AF6C1FA0 /* ACBInfoPanelResources.xcassets */; };
-		24339662E7EA48AB22A5840EE3D86F40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3A253C20043F555E69E6360A4FE91F /* Foundation.framework */; };
-		4BE04AF5415FB9CC147A128D5198BC0E /* GradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8028589528F23797CAB3BB39C6503F2 /* GradientView-dummy.m */; };
-		794F2E13EE68D22351165A6B9E6C0507 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3A253C20043F555E69E6360A4FE91F /* Foundation.framework */; };
-		87F2234047EB1BAC6137F115AF8E9573 /* GradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB0B83047A995C80F7C8E42D35CC5F26 /* GradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E34B5E64D6DF10C008A3658BA0CB435 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6703653EA5FC7F138AF86A58D2A7F3 /* UIKit.framework */; };
-		8ED01D46D8A4E795DDFF276EDC96EE0C /* GradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D098C75816827F953E824885E28960 /* GradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		911B46439191E17DE1C75241CE9199B8 /* NSURL+ACBUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47877D853251E158704571F45A66BF5B /* NSURL+ACBUrls.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9C271871F2B31004B4333E63682B25B3 /* ACBInfoPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FBE3831398C10A0B85F9DDF0804D98D /* ACBInfoPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A36477AA753FB0BE621A8EAA7104B9F2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DB20D72771132A15C094D00C99F2F /* GradientView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A83D91D406A1E29AF8FFE1210F913609 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E338781BEAFB5BE3662D64D4C9F2382D /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFA6134D85FF925EB0716C77C39A2807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3A253C20043F555E69E6360A4FE91F /* Foundation.framework */; };
-		D3A6684DB252CF7FE451DF1AD7125360 /* ACBInfoPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB17C5741C99043B065BC3ACD1D60C4 /* ACBInfoPanel-dummy.m */; };
-		DD53A95BDBAE994449644CC2EAE58CC6 /* ACBInfoPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F184D2A7C91448118DDB4453AC33A1 /* ACBInfoPanelViewController.xib */; };
-		FCFF0A734BD0261D005F8FB686FF3EFC /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B666F64D69061A0A11D4708F18AE00 /* Pods-dummy.m */; };
+		06BD18B2BDB20091DD61E90978425AC8 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D7094F3414A1EE9A5B01D1A8FBCEF48D /* CHCSVParser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		14B42BD11DBF1ADE401B7121179A2EE6 /* CHCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 06EE4DD4B9D14F17DFC465EBE2ACFBBF /* CHCSVParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A9E3A6953F97473B490DD25FD55C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDF2A633CC2E28F55ECFFE4F7BA0AC8 /* Foundation.framework */; };
+		35745ABC833081790DCB3F49724D3B23 /* ACBInfoPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99023B7CCB841D255957C773A4DEF22D /* ACBInfoPanelViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4EA042C4C55B6FF83E457E6BDD3BED17 /* ACBInfoPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCB1BD903633335AAC502307A7DF703 /* ACBInfoPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BF8D897A8D5731A84E3240E8EEEFD8B /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF5A98FF501135DF89168CC774420F /* Pods-dummy.m */; };
+		7707B61FB92D67B882482790FA572E6E /* CHCSVParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 846E22090157F24D5C5642E4ECA9746F /* CHCSVParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81C926F33C717F5CD2A93EDD08952ADB /* CHCSVParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F92735D684F151E0EBF21647B77D86D /* CHCSVParser-dummy.m */; };
+		8B9CB0E1DDB0B69E12DF395CD4CCE4CC /* ACBInfoPanelResources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333FF9CBB96604F3E8E130CB1F867B52 /* ACBInfoPanelResources.xcassets */; };
+		AAF2D93C77893A759FB44D1F3BEAA220 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDF2A633CC2E28F55ECFFE4F7BA0AC8 /* Foundation.framework */; };
+		B54A116D3E172FABF041723895E3A42E /* NSURL+ACBUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69574D076C4CD9863EA53C356BED29A7 /* NSURL+ACBUrls.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C58CAF8A2D0A87A80956EC19ECEB780F /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D10F459E79B5EE20E7C1040180E4D2B9 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD31807B8E1F4697B61551FE33FF71B7 /* ACBInfoPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D2B4F0BA8302716F4AA950C0BBEE5D /* ACBInfoPanelViewController.xib */; };
+		CE615B204AEDBC54EA5AD1861C922B9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDF2A633CC2E28F55ECFFE4F7BA0AC8 /* Foundation.framework */; };
+		F251FADBB18BD5FB9857FE4625C1064D /* ACBInfoPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B01218EE556B63F55A5E3F3AA2D67539 /* ACBInfoPanel-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		364F939C16171ECAC1DDA70854D24485 /* PBXContainerItemProxy */ = {
+		FB14FDDF95C56A2163885018ECCFE3F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0F7BA42F8A82DBB62DCF243C90C33F61;
-			remoteInfo = GradientView;
-		};
-		D25FF3DCDE7E08ABA98C666E581DA906 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 77E1FF3230AE58EBCC80B2CC67291848;
+			remoteGlobalIDString = 9FC034E94F03321734C5A8CB8568BCB9;
 			remoteInfo = ACBInfoPanel;
+		};
+		FC2663A7DCA7F36F55B60387E1C117A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 698B16DEDD504B8AE0F37F46926EEA1D;
+			remoteInfo = CHCSVParser;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A0823E4BA1A8F0A87D59DF4BC788926 /* ACBInfoPanel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACBInfoPanel-Private.xcconfig"; sourceTree = "<group>"; };
-		20D0108BBF529829F41B81C59505D2D3 /* GradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GradientView.modulemap; sourceTree = "<group>"; };
-		243C559441E52B4480F8C93EFE9D5C51 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		287CF83806EFDA75C7652563C6D7FCAD /* GradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientView.xcconfig; sourceTree = "<group>"; };
-		3BFB5F93C5AA24CB41BE47673FF29525 /* ACBInfoPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ACBInfoPanel.modulemap; sourceTree = "<group>"; };
-		47877D853251E158704571F45A66BF5B /* NSURL+ACBUrls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+ACBUrls.swift"; path = "templates/ACBInfoPanel/NSURL+ACBUrls.swift"; sourceTree = "<group>"; };
-		59FA7371E0BAF61624B1FC53AF6C1FA0 /* ACBInfoPanelResources.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ACBInfoPanelResources.xcassets; path = templates/ACBInfoPanel/ACBInfoPanelResources.xcassets; sourceTree = "<group>"; };
-		5F9A1D69EBE2F349763C6CCE9BB239BF /* ACBInfoPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ACBInfoPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		644762015F72AD12C50C3442E58788F3 /* GradientView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GradientView-Private.xcconfig"; sourceTree = "<group>"; };
-		6E6703653EA5FC7F138AF86A58D2A7F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		6FD84967F0EE7699F3DD6C537829CFEA /* GradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71190522E0B8C2B31F23C47DD3F6F3B7 /* ACBInfoPanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACBInfoPanelViewController.swift; path = templates/ACBInfoPanel/ACBInfoPanelViewController.swift; sourceTree = "<group>"; };
+		06EE4DD4B9D14F17DFC465EBE2ACFBBF /* CHCSVParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = CHCSVParser/CHCSVParser/CHCSVParser.h; sourceTree = "<group>"; };
+		0CFFA7424DE065EEBF91DC64169BE7DA /* CHCSVParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHCSVParser.xcconfig; sourceTree = "<group>"; };
+		27D4D675E0E16A79E06378C820E3C030 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		333FF9CBB96604F3E8E130CB1F867B52 /* ACBInfoPanelResources.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ACBInfoPanelResources.xcassets; path = templates/ACBInfoPanel/ACBInfoPanelResources.xcassets; sourceTree = "<group>"; };
+		3FDF2A633CC2E28F55ECFFE4F7BA0AC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4DBC5F735B58795A60AC1A78A0FC5577 /* ACBInfoPanel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACBInfoPanel-Private.xcconfig"; sourceTree = "<group>"; };
+		67FAE8D529755E5E71E31319D6DB10C0 /* CHCSVParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHCSVParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		680E0EB7D49A40150B6EA925CBA24CC0 /* CHCSVParser-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CHCSVParser-Private.xcconfig"; sourceTree = "<group>"; };
+		6920BD43DB0ECA51AECD7C57866905FB /* ACBInfoPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACBInfoPanel-prefix.pch"; sourceTree = "<group>"; };
+		69574D076C4CD9863EA53C356BED29A7 /* NSURL+ACBUrls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+ACBUrls.swift"; path = "templates/ACBInfoPanel/NSURL+ACBUrls.swift"; sourceTree = "<group>"; };
+		73BF4DA8C1ACC1F8914D26993678FBA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		79D098C75816827F953E824885E28960 /* GradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientView.h; path = GradientView/GradientView.h; sourceTree = "<group>"; };
+		7F92735D684F151E0EBF21647B77D86D /* CHCSVParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHCSVParser-dummy.m"; sourceTree = "<group>"; };
+		7FCB1BD903633335AAC502307A7DF703 /* ACBInfoPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACBInfoPanel-umbrella.h"; sourceTree = "<group>"; };
+		80CF5A98FF501135DF89168CC774420F /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		846E22090157F24D5C5642E4ECA9746F /* CHCSVParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-umbrella.h"; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		95B666F64D69061A0A11D4708F18AE00 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		9AB17C5741C99043B065BC3ACD1D60C4 /* ACBInfoPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACBInfoPanel-dummy.m"; sourceTree = "<group>"; };
-		9D24D970322783B43E2B4D13AFE5E7FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FBE3831398C10A0B85F9DDF0804D98D /* ACBInfoPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACBInfoPanel-umbrella.h"; sourceTree = "<group>"; };
-		AF3DB20D72771132A15C094D00C99F2F /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = GradientView/GradientView.swift; sourceTree = "<group>"; };
-		B8028589528F23797CAB3BB39C6503F2 /* GradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientView-dummy.m"; sourceTree = "<group>"; };
+		93E35DC042F321069A0E6E271E4F0C43 /* ACBInfoPanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACBInfoPanel.xcconfig; sourceTree = "<group>"; };
+		99023B7CCB841D255957C773A4DEF22D /* ACBInfoPanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACBInfoPanelViewController.swift; path = templates/ACBInfoPanel/ACBInfoPanelViewController.swift; sourceTree = "<group>"; };
+		AD3582724E7B0C3C1DD9654A1007563C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		B01218EE556B63F55A5E3F3AA2D67539 /* ACBInfoPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACBInfoPanel-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB5B2766A90977A9C1C9FB1A74E06D5F /* ACBInfoPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACBInfoPanel-prefix.pch"; sourceTree = "<group>"; };
-		CAE70213BAC8DBFCB58DDE09CEB0CBB8 /* ACBInfoPanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACBInfoPanel.xcconfig; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D0AC5D8A1460DED371BC6BABE2BC8AA2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DD3A253C20043F555E69E6360A4FE91F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E1A9F224F1ABB4914DEDDA61FC027BEE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		E338781BEAFB5BE3662D64D4C9F2382D /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		D10F459E79B5EE20E7C1040180E4D2B9 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		D1698F0C4D1A976B401A01C2642ABCC3 /* CHCSVParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-prefix.pch"; sourceTree = "<group>"; };
+		D5D2B4F0BA8302716F4AA950C0BBEE5D /* ACBInfoPanelViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ACBInfoPanelViewController.xib; path = templates/ACBInfoPanel/ACBInfoPanelViewController.xib; sourceTree = "<group>"; };
+		D7094F3414A1EE9A5B01D1A8FBCEF48D /* CHCSVParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = CHCSVParser/CHCSVParser/CHCSVParser.m; sourceTree = "<group>"; };
+		D9C063661839E413586EA6EF3DA758A8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5E742A2C3780DA706B1537621BAD7E /* ACBInfoPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ACBInfoPanel.modulemap; sourceTree = "<group>"; };
+		E15B67258F1693172DE461E7D9BA2FD0 /* ACBInfoPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ACBInfoPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BC062C2E5FBBBDE2C3378F7C59CAA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		E8378CEF22A1C573EFB6085F801DB5FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8F184D2A7C91448118DDB4453AC33A1 /* ACBInfoPanelViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ACBInfoPanelViewController.xib; path = templates/ACBInfoPanel/ACBInfoPanelViewController.xib; sourceTree = "<group>"; };
-		FB0B83047A995C80F7C8E42D35CC5F26 /* GradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-umbrella.h"; sourceTree = "<group>"; };
-		FBF2745AA027C4F06BA8D5054A9CAEEA /* GradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-prefix.pch"; sourceTree = "<group>"; };
+		EF13F80B8E30FDF571AD0D144193C978 /* CHCSVParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CHCSVParser.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		074AFC887B40710BFF76ED670EB916A9 /* Frameworks */ = {
+		52594057ED0A9AC8628CC59D67A57F71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24339662E7EA48AB22A5840EE3D86F40 /* Foundation.framework in Frameworks */,
+				244A9E3A6953F97473B490DD25FD55C8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E0DB6292B3BFE14135009CCCAD49EA1 /* Frameworks */ = {
+		8FA4C6E29F2884A689C816308EB130E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA6134D85FF925EB0716C77C39A2807 /* Foundation.framework in Frameworks */,
+				CE615B204AEDBC54EA5AD1861C922B9B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C25C75DEAC3858C3F01D1255373F505B /* Frameworks */ = {
+		D650CD1D56DBE1CF68F101C15532EDFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				794F2E13EE68D22351165A6B9E6C0507 /* Foundation.framework in Frameworks */,
-				8E34B5E64D6DF10C008A3658BA0CB435 /* UIKit.framework in Frameworks */,
+				AAF2D93C77893A759FB44D1F3BEAA220 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		233FBD0F9C7F4D8E144F9C62A6DD0BC6 /* GradientView */ = {
+		0ABB25CE74CA132AF41FAA9CCA573168 /* ACBInfoPanel */ = {
 			isa = PBXGroup;
 			children = (
-				79D098C75816827F953E824885E28960 /* GradientView.h */,
-				AF3DB20D72771132A15C094D00C99F2F /* GradientView.swift */,
-				FEE63FC632315728849CA4F30AA499AB /* Support Files */,
+				99023B7CCB841D255957C773A4DEF22D /* ACBInfoPanelViewController.swift */,
+				69574D076C4CD9863EA53C356BED29A7 /* NSURL+ACBUrls.swift */,
+				22E94967D4A9B7E5CBADD476F4A46F51 /* Resources */,
+				40F8C94577E363C1A7A63756BBFFD155 /* Support Files */,
 			);
-			path = GradientView;
+			path = ACBInfoPanel;
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		22E94967D4A9B7E5CBADD476F4A46F51 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
+				333FF9CBB96604F3E8E130CB1F867B52 /* ACBInfoPanelResources.xcassets */,
+				D5D2B4F0BA8302716F4AA950C0BBEE5D /* ACBInfoPanelViewController.xib */,
 			);
-			name = Frameworks;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		40F8C94577E363C1A7A63756BBFFD155 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E742A2C3780DA706B1537621BAD7E /* ACBInfoPanel.modulemap */,
+				93E35DC042F321069A0E6E271E4F0C43 /* ACBInfoPanel.xcconfig */,
+				4DBC5F735B58795A60AC1A78A0FC5577 /* ACBInfoPanel-Private.xcconfig */,
+				B01218EE556B63F55A5E3F3AA2D67539 /* ACBInfoPanel-dummy.m */,
+				6920BD43DB0ECA51AECD7C57866905FB /* ACBInfoPanel-prefix.pch */,
+				7FCB1BD903633335AAC502307A7DF703 /* ACBInfoPanel-umbrella.h */,
+				E6BC062C2E5FBBBDE2C3378F7C59CAA5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACBInfoPanel";
+			sourceTree = "<group>";
+		};
+		417E721E4F9BA0AE55626A6C14E4D04C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ABB25CE74CA132AF41FAA9CCA573168 /* ACBInfoPanel */,
+				66813506EA566C6987D7B4A5D67F2EA0 /* CHCSVParser */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3FDF2A633CC2E28F55ECFFE4F7BA0AC8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		66813506EA566C6987D7B4A5D67F2EA0 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				06EE4DD4B9D14F17DFC465EBE2ACFBBF /* CHCSVParser.h */,
+				D7094F3414A1EE9A5B01D1A8FBCEF48D /* CHCSVParser.m */,
+				7E018317DB93C69ACBBD683F2EF3939C /* Support Files */,
+			);
+			path = CHCSVParser;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -135,37 +176,41 @@
 				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
 				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
 				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
-				95B666F64D69061A0A11D4708F18AE00 /* Pods-dummy.m */,
+				80CF5A98FF501135DF89168CC774420F /* Pods-dummy.m */,
 				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
 				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
-				E338781BEAFB5BE3662D64D4C9F2382D /* Pods-umbrella.h */,
-				E1A9F224F1ABB4914DEDDA61FC027BEE /* Pods.debug.xcconfig */,
-				D0AC5D8A1460DED371BC6BABE2BC8AA2 /* Pods.release.xcconfig */,
+				D10F459E79B5EE20E7C1040180E4D2B9 /* Pods-umbrella.h */,
+				27D4D675E0E16A79E06378C820E3C030 /* Pods.debug.xcconfig */,
+				AD3582724E7B0C3C1DD9654A1007563C /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		7CACCCA1B96251FEC1914D8862A85DD6 /* ACBInfoPanel */ = {
-			isa = PBXGroup;
-			children = (
-				71190522E0B8C2B31F23C47DD3F6F3B7 /* ACBInfoPanelViewController.swift */,
-				47877D853251E158704571F45A66BF5B /* NSURL+ACBUrls.swift */,
-				D9FC75ACB48EF2EB8ECA506E9B4ABEEE /* Resources */,
-				F26DE276936BA5A075A5CBF290CF7F35 /* Support Files */,
-			);
-			path = ACBInfoPanel;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				BC7AB76AEE0660515F58DF5B213ABF19 /* Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				417E721E4F9BA0AE55626A6C14E4D04C /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7E018317DB93C69ACBBD683F2EF3939C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF13F80B8E30FDF571AD0D144193C978 /* CHCSVParser.modulemap */,
+				0CFFA7424DE065EEBF91DC64169BE7DA /* CHCSVParser.xcconfig */,
+				680E0EB7D49A40150B6EA925CBA24CC0 /* CHCSVParser-Private.xcconfig */,
+				7F92735D684F151E0EBF21647B77D86D /* CHCSVParser-dummy.m */,
+				D1698F0C4D1A976B401A01C2642ABCC3 /* CHCSVParser-prefix.pch */,
+				846E22090157F24D5C5642E4ECA9746F /* CHCSVParser-umbrella.h */,
+				73BF4DA8C1ACC1F8914D26993678FBA4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CHCSVParser";
 			sourceTree = "<group>";
 		};
 		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
@@ -176,148 +221,99 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC7AB76AEE0660515F58DF5B213ABF19 /* Pods */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7CACCCA1B96251FEC1914D8862A85DD6 /* ACBInfoPanel */,
-				233FBD0F9C7F4D8E144F9C62A6DD0BC6 /* GradientView */,
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F9A1D69EBE2F349763C6CCE9BB239BF /* ACBInfoPanel.framework */,
-				6FD84967F0EE7699F3DD6C537829CFEA /* GradientView.framework */,
-				243C559441E52B4480F8C93EFE9D5C51 /* Pods.framework */,
+				E15B67258F1693172DE461E7D9BA2FD0 /* ACBInfoPanel.framework */,
+				67FAE8D529755E5E71E31319D6DB10C0 /* CHCSVParser.framework */,
+				D9C063661839E413586EA6EF3DA758A8 /* Pods.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DD3A253C20043F555E69E6360A4FE91F /* Foundation.framework */,
-				6E6703653EA5FC7F138AF86A58D2A7F3 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D9FC75ACB48EF2EB8ECA506E9B4ABEEE /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				59FA7371E0BAF61624B1FC53AF6C1FA0 /* ACBInfoPanelResources.xcassets */,
-				F8F184D2A7C91448118DDB4453AC33A1 /* ACBInfoPanelViewController.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		F26DE276936BA5A075A5CBF290CF7F35 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BFB5F93C5AA24CB41BE47673FF29525 /* ACBInfoPanel.modulemap */,
-				CAE70213BAC8DBFCB58DDE09CEB0CBB8 /* ACBInfoPanel.xcconfig */,
-				0A0823E4BA1A8F0A87D59DF4BC788926 /* ACBInfoPanel-Private.xcconfig */,
-				9AB17C5741C99043B065BC3ACD1D60C4 /* ACBInfoPanel-dummy.m */,
-				BB5B2766A90977A9C1C9FB1A74E06D5F /* ACBInfoPanel-prefix.pch */,
-				9FBE3831398C10A0B85F9DDF0804D98D /* ACBInfoPanel-umbrella.h */,
-				9D24D970322783B43E2B4D13AFE5E7FD /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ACBInfoPanel";
-			sourceTree = "<group>";
-		};
-		FEE63FC632315728849CA4F30AA499AB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				20D0108BBF529829F41B81C59505D2D3 /* GradientView.modulemap */,
-				287CF83806EFDA75C7652563C6D7FCAD /* GradientView.xcconfig */,
-				644762015F72AD12C50C3442E58788F3 /* GradientView-Private.xcconfig */,
-				B8028589528F23797CAB3BB39C6503F2 /* GradientView-dummy.m */,
-				FBF2745AA027C4F06BA8D5054A9CAEEA /* GradientView-prefix.pch */,
-				FB0B83047A995C80F7C8E42D35CC5F26 /* GradientView-umbrella.h */,
-				E8378CEF22A1C573EFB6085F801DB5FB /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GradientView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1C2D628115213A6D51F05DE6229BFB5A /* Headers */ = {
+		3CC0F50C2700A3D869C92560805BB43C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A83D91D406A1E29AF8FFE1210F913609 /* Pods-umbrella.h in Headers */,
+				7707B61FB92D67B882482790FA572E6E /* CHCSVParser-umbrella.h in Headers */,
+				14B42BD11DBF1ADE401B7121179A2EE6 /* CHCSVParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E2C512D3507CFECDF63410D9D926001 /* Headers */ = {
+		53CFADCF8CD3358CE2162F5D1B9B4CD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C271871F2B31004B4333E63682B25B3 /* ACBInfoPanel-umbrella.h in Headers */,
+				C58CAF8A2D0A87A80956EC19ECEB780F /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6ABD59164E93D0D1DA8FE02CF3F85DAB /* Headers */ = {
+		9E46013C9D509E5CA1A8D8F9186B7B18 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F2234047EB1BAC6137F115AF8E9573 /* GradientView-umbrella.h in Headers */,
-				8ED01D46D8A4E795DDFF276EDC96EE0C /* GradientView.h in Headers */,
+				4EA042C4C55B6FF83E457E6BDD3BED17 /* ACBInfoPanel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0F7BA42F8A82DBB62DCF243C90C33F61 /* GradientView */ = {
+		28617539440F7A6E49235DDAAE3D2AE8 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11CA665AD420FCBC9634B3DE34A5805F /* Build configuration list for PBXNativeTarget "GradientView" */;
+			buildConfigurationList = F6BB1A5BAFD4D3B4985F8840EF8D7C30 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				CC16CE7084BDD2607ABE944B16EE26D3 /* Sources */,
-				C25C75DEAC3858C3F01D1255373F505B /* Frameworks */,
-				6ABD59164E93D0D1DA8FE02CF3F85DAB /* Headers */,
+				3A79D791AE0F377FABAD356196768627 /* Sources */,
+				8FA4C6E29F2884A689C816308EB130E2 /* Frameworks */,
+				53CFADCF8CD3358CE2162F5D1B9B4CD6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = GradientView;
-			productName = GradientView;
-			productReference = 6FD84967F0EE7699F3DD6C537829CFEA /* GradientView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4A754D956A4645780CBBC9D213ED0E45 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 882AF9A526C26B99A100F2040A867958 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				BE10CE01E0B75C9A7B1C4864E8F5DCD8 /* Sources */,
-				3E0DB6292B3BFE14135009CCCAD49EA1 /* Frameworks */,
-				1C2D628115213A6D51F05DE6229BFB5A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5201CDC38754AA4623890C49C416111B /* PBXTargetDependency */,
-				EB306521CC79F5184359D9F5673B6961 /* PBXTargetDependency */,
+				E1CF4502B7597F6FCB7487BB76CE1A3C /* PBXTargetDependency */,
+				D05ACDC745BD0CF55C4ACE81A925E2DC /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 243C559441E52B4480F8C93EFE9D5C51 /* Pods.framework */;
+			productReference = D9C063661839E413586EA6EF3DA758A8 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		77E1FF3230AE58EBCC80B2CC67291848 /* ACBInfoPanel */ = {
+		698B16DEDD504B8AE0F37F46926EEA1D /* CHCSVParser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 450E20501D6200BA0AF24C7FE9785971 /* Build configuration list for PBXNativeTarget "ACBInfoPanel" */;
+			buildConfigurationList = 0B05F744E5BC1973768BAB9DC487C239 /* Build configuration list for PBXNativeTarget "CHCSVParser" */;
 			buildPhases = (
-				FA2C2AA2AD5EC6F5A717ABF76E01FFB0 /* Sources */,
-				074AFC887B40710BFF76ED670EB916A9 /* Frameworks */,
-				F829FA81A895121100ED47A021EA80CB /* Resources */,
-				3E2C512D3507CFECDF63410D9D926001 /* Headers */,
+				3904861E5F80AC8CC948EC0408812C12 /* Sources */,
+				D650CD1D56DBE1CF68F101C15532EDFF /* Frameworks */,
+				3CC0F50C2700A3D869C92560805BB43C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHCSVParser;
+			productName = CHCSVParser;
+			productReference = 67FAE8D529755E5E71E31319D6DB10C0 /* CHCSVParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FC034E94F03321734C5A8CB8568BCB9 /* ACBInfoPanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 619604A777C79986E0C7425DEA9A90F4 /* Build configuration list for PBXNativeTarget "ACBInfoPanel" */;
+			buildPhases = (
+				E92B386B4129BA4B37ECEE42F13CF3F7 /* Sources */,
+				52594057ED0A9AC8628CC59D67A57F71 /* Frameworks */,
+				CE425FFA541E517612E99179E16BB6AB /* Resources */,
+				9E46013C9D509E5CA1A8D8F9186B7B18 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -325,7 +321,7 @@
 			);
 			name = ACBInfoPanel;
 			productName = ACBInfoPanel;
-			productReference = 5F9A1D69EBE2F349763C6CCE9BB239BF /* ACBInfoPanel.framework */;
+			productReference = E15B67258F1693172DE461E7D9BA2FD0 /* ACBInfoPanel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -349,90 +345,92 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77E1FF3230AE58EBCC80B2CC67291848 /* ACBInfoPanel */,
-				0F7BA42F8A82DBB62DCF243C90C33F61 /* GradientView */,
-				4A754D956A4645780CBBC9D213ED0E45 /* Pods */,
+				9FC034E94F03321734C5A8CB8568BCB9 /* ACBInfoPanel */,
+				698B16DEDD504B8AE0F37F46926EEA1D /* CHCSVParser */,
+				28617539440F7A6E49235DDAAE3D2AE8 /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F829FA81A895121100ED47A021EA80CB /* Resources */ = {
+		CE425FFA541E517612E99179E16BB6AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F51524DB6FE3A9F492D2034C85849CC /* ACBInfoPanelResources.xcassets in Resources */,
-				DD53A95BDBAE994449644CC2EAE58CC6 /* ACBInfoPanelViewController.xib in Resources */,
+				8B9CB0E1DDB0B69E12DF395CD4CCE4CC /* ACBInfoPanelResources.xcassets in Resources */,
+				CD31807B8E1F4697B61551FE33FF71B7 /* ACBInfoPanelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BE10CE01E0B75C9A7B1C4864E8F5DCD8 /* Sources */ = {
+		3904861E5F80AC8CC948EC0408812C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCFF0A734BD0261D005F8FB686FF3EFC /* Pods-dummy.m in Sources */,
+				81C926F33C717F5CD2A93EDD08952ADB /* CHCSVParser-dummy.m in Sources */,
+				06BD18B2BDB20091DD61E90978425AC8 /* CHCSVParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC16CE7084BDD2607ABE944B16EE26D3 /* Sources */ = {
+		3A79D791AE0F377FABAD356196768627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE04AF5415FB9CC147A128D5198BC0E /* GradientView-dummy.m in Sources */,
-				A36477AA753FB0BE621A8EAA7104B9F2 /* GradientView.swift in Sources */,
+				6BF8D897A8D5731A84E3240E8EEEFD8B /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA2C2AA2AD5EC6F5A717ABF76E01FFB0 /* Sources */ = {
+		E92B386B4129BA4B37ECEE42F13CF3F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A6684DB252CF7FE451DF1AD7125360 /* ACBInfoPanel-dummy.m in Sources */,
-				12FFE3A1E23853B9E6A8DC4DF2EB1311 /* ACBInfoPanelViewController.swift in Sources */,
-				911B46439191E17DE1C75241CE9199B8 /* NSURL+ACBUrls.swift in Sources */,
+				F251FADBB18BD5FB9857FE4625C1064D /* ACBInfoPanel-dummy.m in Sources */,
+				35745ABC833081790DCB3F49724D3B23 /* ACBInfoPanelViewController.swift in Sources */,
+				B54A116D3E172FABF041723895E3A42E /* NSURL+ACBUrls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5201CDC38754AA4623890C49C416111B /* PBXTargetDependency */ = {
+		D05ACDC745BD0CF55C4ACE81A925E2DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CHCSVParser;
+			target = 698B16DEDD504B8AE0F37F46926EEA1D /* CHCSVParser */;
+			targetProxy = FC2663A7DCA7F36F55B60387E1C117A0 /* PBXContainerItemProxy */;
+		};
+		E1CF4502B7597F6FCB7487BB76CE1A3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ACBInfoPanel;
-			target = 77E1FF3230AE58EBCC80B2CC67291848 /* ACBInfoPanel */;
-			targetProxy = D25FF3DCDE7E08ABA98C666E581DA906 /* PBXContainerItemProxy */;
-		};
-		EB306521CC79F5184359D9F5673B6961 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GradientView;
-			target = 0F7BA42F8A82DBB62DCF243C90C33F61 /* GradientView */;
-			targetProxy = 364F939C16171ECAC1DDA70854D24485 /* PBXContainerItemProxy */;
+			target = 9FC034E94F03321734C5A8CB8568BCB9 /* ACBInfoPanel */;
+			targetProxy = FB14FDDF95C56A2163885018ECCFE3F8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		498281CC43456C7F55659DC534B909F4 /* Release */ = {
+		00A953FB3715125D5FF98F76288D829D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A0823E4BA1A8F0A87D59DF4BC788926 /* ACBInfoPanel-Private.xcconfig */;
+			baseConfigurationReference = AD3582724E7B0C3C1DD9654A1007563C /* Pods.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.0.1;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ACBInfoPanel/ACBInfoPanel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ACBInfoPanel/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ACBInfoPanel/ACBInfoPanel.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ACBInfoPanel;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,9 +473,36 @@
 			};
 			name = Release;
 		};
-		53A909F0E13FE5BD9DFFCDB24142266A /* Release */ = {
+		6F1EAFEBDE9931A8CA4740FEC0BBF2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0AC5D8A1460DED371BC6BABE2BC8AA2 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 680E0EB7D49A40150B6EA925CBA24CC0 /* CHCSVParser-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CHCSVParser/CHCSVParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHCSVParser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CHCSVParser/CHCSVParser.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CHCSVParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83242A730E5F4F5F8B586B5C8A40746B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D4D675E0E16A79E06378C820E3C030 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -491,11 +516,39 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		917820B7B54605A48C7D0C77948027FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680E0EB7D49A40150B6EA925CBA24CC0 /* CHCSVParser-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CHCSVParser/CHCSVParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHCSVParser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CHCSVParser/CHCSVParser.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CHCSVParser;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -504,9 +557,9 @@
 			};
 			name = Release;
 		};
-		5C8C5FB373647A50038971ED9FBA5A88 /* Debug */ = {
+		A4F719917D642CCE11BFB910F295E2A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A0823E4BA1A8F0A87D59DF4BC788926 /* ACBInfoPanel-Private.xcconfig */;
+			baseConfigurationReference = 4DBC5F735B58795A60AC1A78A0FC5577 /* ACBInfoPanel-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.0.1;
@@ -523,34 +576,6 @@
 				MODULEMAP_FILE = "Target Support Files/ACBInfoPanel/ACBInfoPanel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = ACBInfoPanel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		61172228DE93D7563BD73A231BC7E710 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 644762015F72AD12C50C3442E58788F3 /* GradientView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.3;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GradientView/GradientView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GradientView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GradientView/GradientView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GradientView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -599,55 +624,25 @@
 			};
 			name = Debug;
 		};
-		BFC6366872AF5ECA84AFEF8DD81CBC5A /* Debug */ = {
+		AB4BABBCD17805AFE14D9A4E98E5B18F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1A9F224F1ABB4914DEDDA61FC027BEE /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 4DBC5F735B58795A60AC1A78A0FC5577 /* ACBInfoPanel-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FADA17DC3AB3300BC795E4249C978220 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 644762015F72AD12C50C3442E58788F3 /* GradientView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.3;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GradientView/GradientView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GradientView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ACBInfoPanel/ACBInfoPanel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACBInfoPanel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GradientView/GradientView.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ACBInfoPanel/ACBInfoPanel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = GradientView;
+				PRODUCT_NAME = ACBInfoPanel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -659,11 +654,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11CA665AD420FCBC9634B3DE34A5805F /* Build configuration list for PBXNativeTarget "GradientView" */ = {
+		0B05F744E5BC1973768BAB9DC487C239 /* Build configuration list for PBXNativeTarget "CHCSVParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61172228DE93D7563BD73A231BC7E710 /* Debug */,
-				FADA17DC3AB3300BC795E4249C978220 /* Release */,
+				6F1EAFEBDE9931A8CA4740FEC0BBF2E7 /* Debug */,
+				917820B7B54605A48C7D0C77948027FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -677,20 +672,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		450E20501D6200BA0AF24C7FE9785971 /* Build configuration list for PBXNativeTarget "ACBInfoPanel" */ = {
+		619604A777C79986E0C7425DEA9A90F4 /* Build configuration list for PBXNativeTarget "ACBInfoPanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C8C5FB373647A50038971ED9FBA5A88 /* Debug */,
-				498281CC43456C7F55659DC534B909F4 /* Release */,
+				A4F719917D642CCE11BFB910F295E2A1 /* Debug */,
+				AB4BABBCD17805AFE14D9A4E98E5B18F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		882AF9A526C26B99A100F2040A867958 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		F6BB1A5BAFD4D3B4985F8840EF8D7C30 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFC6366872AF5ECA84AFEF8DD81CBC5A /* Debug */,
-				53A909F0E13FE5BD9DFFCDB24142266A /* Release */,
+				83242A730E5F4F5F8B586B5C8A40746B /* Debug */,
+				00A953FB3715125D5FF98F76288D829D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

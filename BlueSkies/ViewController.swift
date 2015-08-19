@@ -14,55 +14,73 @@ class ViewController: UIViewController {
     // MARK: Properties
     @IBOutlet var mapView: MKMapView!
 
+    private var airports: [Airport] = []
+
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let jfk = CLLocationCoordinate2D(latitude: 40.639751, longitude: -73.778925)
-        let atl = CLLocationCoordinate2D(latitude: 33.636719, longitude: -84.428067)
-        let nyz = CLLocationCoordinate2D(latitude: 32.699219, longitude: -117.21531)
-        
-        self.mapView.addAnnotation(Airport(coordinate: jfk))
-        self.mapView.addAnnotation(Airport(coordinate: atl))
-        self.mapView.addAnnotation(Airport(coordinate: nyz))
-        
-        let plane = Plane(coordinate: jfk)
-        self.mapView.addAnnotation(plane)
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(5 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -> Void in
-            let view = self.mapView.viewForAnnotation(plane) as! PlaneView
-            view.flyToCoordinate(atl, speed: 200) { () -> Void in
-                println("SUCCESS")
-            }
+        Airport.all {
+            self.airports = $0
+            self.beginExercise()
         }
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
+    
+    // MARK: Exercise Handlers
+    func beginExercise() {
+        let firstAirport = self.airports.random()!
+        
+        self.mapView.centerCoordinate = firstAirport.coordinate
+        self.mapView.addAnnotation(firstAirport)
+        
+        let firstAirportLocation = CLLocation(latitude: firstAirport.coordinate.latitude, longitude: firstAirport.coordinate.longitude)
+        let secondAirport = self.airports.filter({
+            let location = CLLocation(latitude: $0.coordinate.latitude, longitude: $0.coordinate.longitude)
+            let distance = firstAirportLocation.distanceFromLocation(location)
+            return distance < 2_500_000
+        }).random()!
+        
+        self.mapView.addAnnotation(secondAirport)
+        
+        let plane = Plane(coordinate: firstAirport.coordinate)
+        self.mapView.addAnnotation(plane)
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2.0 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
+            let planeView = self.mapView.viewForAnnotation(plane) as! PlaneView
+            planeView.flyToCoordinate(secondAirport.coordinate, speed: 200)
+        }
+    }
 }
 
 extension ViewController: MKMapViewDelegate {
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
-        let view: MKAnnotationView
+        var view: MKAnnotationView?
         
         switch annotation {
         case let annotation as Plane:
             view = PlaneView(annotation: annotation,
                 reuseIdentifier: "")
-            view.alpha = 0.0
+            view?.alpha = 0.0
         
         case let annotation as Airport:
-            view = AirportView(annotation: annotation,
-                reuseIdentifier: "")
-            view.tintColor = UIColor.whiteColor()
+            view = mapView.dequeueReusableAnnotationViewWithIdentifier("Airport")
+            if view == nil {
+                view = AirportView(annotation: annotation,
+                    reuseIdentifier: "Airport")
+            }
+            
+            view?.annotation = annotation
+            view?.tintColor = UIColor.whiteColor()
             
         default:
             view = MKAnnotationView(annotation: annotation,
                 reuseIdentifier: "")
         }
         
-        return view
+        return view!
     }
     
     func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
