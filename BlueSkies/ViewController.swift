@@ -13,8 +13,12 @@ import GradientView
 class ViewController: UIViewController {
     // MARK: Properties
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet var exerciseStepView: UIView!
+    @IBOutlet var exerciseStepIndicators: [UIImageView] = []
+    
     @IBOutlet var introView: UIView!
     @IBOutlet var swipeInstructionLabel: UILabel!
+    
 
     private var airports: [Airport] = []
     private var exerciseStep: Int = 0

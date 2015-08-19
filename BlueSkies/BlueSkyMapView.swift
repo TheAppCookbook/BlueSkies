@@ -33,8 +33,8 @@ class BlueSkyMapViewGradientOverlayRenderer: MKOverlayRenderer {
     // MARK: Properties
     private var gradient: CGGradientRef?
     private let gradientColors = [
-        UIColor(red: 0.15, green: 0.55, blue: 0.82, alpha: 0.78),
-        UIColor(red: 0.67, green: 0.90, blue: 0.99, alpha: 0.73)
+        UIColor(red: 0.02, green: 0.43, blue: 0.77, alpha: 0.80),
+        UIColor(red: 0.85, green: 0.96, blue: 1.00, alpha: 0.80)
     ]
     
     override init!(overlay: MKOverlay!) {
@@ -73,11 +73,13 @@ class BlueSkyMapViewGradientOverlayRenderer: MKOverlayRenderer {
     override func drawMapRect(mapRect: MKMapRect, zoomScale: MKZoomScale, inContext context: CGContext!) {
         self.updateGradient()
         
-        let rect = self.rectForMapRect(self.overlay.boundingMapRect)
-        CGContextDrawLinearGradient(context,
-            self.gradient,
-            CGPoint(x: CGRectGetMidX(rect), y: CGRectGetMinY(rect)),
-            CGPoint(x: CGRectGetMidX(rect), y: CGRectGetMaxY(rect)),
-            CGGradientDrawingOptions.allZeros)
+        if let gradient = self.gradient {
+            let rect = self.rectForMapRect(self.overlay.boundingMapRect)
+            CGContextDrawLinearGradient(context,
+                gradient,
+                CGPoint(x: CGRectGetMidX(rect), y: CGRectGetMinY(rect)),
+                CGPoint(x: CGRectGetMidX(rect), y: CGRectGetMaxY(rect)),
+                CGGradientDrawingOptions.allZeros)
+        }
     }
 }

@@ -191,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		732FC3281B84E41E00DB69A5 /* BlueSkies */ = {
+		732FC3281B84E41E00DB69A5 /* Blue Skies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "BlueSkies" */;
+			buildConfigurationList = 732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "Blue Skies" */;
 			buildPhases = (
 				966F783C39514683AE1B25A5 /* Check Pods Manifest.lock */,
 				732FC3251B84E41E00DB69A5 /* Sources */,
@@ -206,7 +206,7 @@
 			);
 			dependencies = (
 			);
-			name = BlueSkies;
+			name = "Blue Skies";
 			productName = BlueSkies;
 			productReference = 732FC3291B84E41E00DB69A5 /* BlueSkies.app */;
 			productType = "com.apple.product-type.application";
@@ -265,7 +265,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				732FC3281B84E41E00DB69A5 /* BlueSkies */,
+				732FC3281B84E41E00DB69A5 /* Blue Skies */,
 				732FC33D1B84E41E00DB69A5 /* BlueSkiesTests */,
 			);
 		};
@@ -370,7 +370,7 @@
 /* Begin PBXTargetDependency section */
 		732FC3401B84E41E00DB69A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 732FC3281B84E41E00DB69A5 /* BlueSkies */;
+			target = 732FC3281B84E41E00DB69A5 /* Blue Skies */;
 			targetProxy = 732FC33F1B84E41E00DB69A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -544,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "BlueSkies" */ = {
+		732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "Blue Skies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				732FC3491B84E41E00DB69A5 /* Debug */,
