@@ -49,4 +49,15 @@ class Airport: NSObject, MKAnnotation {
             }
         }
     }
+    
+    // MARK: Accessors
+    func airportWithinDistance(distance: CLLocationDistance) -> Airport {
+        let currentLocation = CLLocation(latitude: self.coordinate.latitude, longitude: self.coordinate.longitude)
+        return Airport.allCached!.filter({
+            let location = CLLocation(latitude: $0.coordinate.latitude, longitude: $0.coordinate.longitude)
+            let locationDistance = currentLocation.distanceFromLocation(location)
+            
+            return locationDistance < distance
+        }).random()!
+    }
 }
