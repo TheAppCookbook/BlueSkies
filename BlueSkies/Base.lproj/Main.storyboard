@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8IX-Gp-EJs">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="iKl-cv-VAD">
+            <objects>
+                <viewController id="8IX-Gp-EJs" customClass="LaunchViewController" customModule="BlueSkies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KUa-wc-qyQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xvk-LC-J4L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8k3-8X-RHK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBg" translatesAutoresizingMaskIntoConstraints="NO" id="uYR-Lu-1XX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="x34-xy-25f" appends="YES" id="lSr-oh-nNC"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="RAy-gH-vMF">
+                                <rect key="frame" x="202" y="222" width="196" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="HXk-5L-Fhu"/>
+                                    <constraint firstAttribute="height" constant="156" id="LEY-Wh-FYs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best when used with headphones. Tap anywhere to begin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA5-m5-94c">
+                                <rect key="frame" x="167" y="423" width="266" height="44"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="otl-Fw-tLx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uYR-Lu-1XX" firstAttribute="centerY" secondItem="RAy-gH-vMF" secondAttribute="centerY" id="Mlm-oG-03j"/>
+                            <constraint firstItem="uYR-Lu-1XX" firstAttribute="centerX" secondItem="RAy-gH-vMF" secondAttribute="centerX" constant="-0.5" id="P6W-OU-Rmc"/>
+                            <constraint firstItem="uYR-Lu-1XX" firstAttribute="top" secondItem="8k3-8X-RHK" secondAttribute="topMargin" id="doB-Sy-W0A"/>
+                            <constraint firstItem="oA5-m5-94c" firstAttribute="centerX" secondItem="RAy-gH-vMF" secondAttribute="centerX" id="gBj-fe-cAT"/>
+                            <constraint firstItem="oA5-m5-94c" firstAttribute="top" secondItem="RAy-gH-vMF" secondAttribute="bottom" constant="45" id="kml-Cd-esB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uYR-Lu-1XX" secondAttribute="trailing" constant="-16" id="lpx-oe-vjk"/>
+                            <constraint firstItem="Xvk-LC-J4L" firstAttribute="top" secondItem="uYR-Lu-1XX" secondAttribute="bottom" id="o0r-mS-PIi"/>
+                            <constraint firstItem="uYR-Lu-1XX" firstAttribute="leading" secondItem="8k3-8X-RHK" secondAttribute="leadingMargin" constant="-16" id="pu6-av-xbW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="em8-gC-MEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="x34-xy-25f">
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="custom" id="aFs-aQ-Lke"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-442" y="334"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -246,7 +305,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="empty-plane" width="168" height="231"/>
-        <image name="plane" width="168" height="231"/>
+        <image name="LaunchBg" width="750" height="1334"/>
+        <image name="LaunchImage" width="430" height="334"/>
+        <image name="empty-plane" width="56" height="77"/>
+        <image name="plane" width="56" height="77"/>
     </resources>
 </document>

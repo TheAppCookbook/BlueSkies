@@ -25,6 +25,7 @@
 		732FC36A1B85409000DB69A5 /* DispatchExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3691B85409000DB69A5 /* DispatchExtensions.swift */; };
 		732FC36C1B85560800DB69A5 /* Oxygen_Garden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 732FC36B1B85560800DB69A5 /* Oxygen_Garden.mp3 */; };
 		73DE2AE01B8559100068CB17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732FC36D1B85574D00DB69A5 /* AVFoundation.framework */; };
+		73DE2AE21B85731F0068CB17 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AE11B85731F0068CB17 /* LaunchViewController.swift */; };
 		E21C7215A1E227EC33892352 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F891DAEF7D89575AAD62825 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		732FC36B1B85560800DB69A5 /* Oxygen_Garden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Oxygen_Garden.mp3; sourceTree = "<group>"; };
 		732FC36D1B85574D00DB69A5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		732FC3701B8557D100DB69A5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		73DE2AE11B85731F0068CB17 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		C50428D52092EC54C67761A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 			children = (
 				732FC32E1B84E41E00DB69A5 /* AppDelegate.swift */,
 				732FC3301B84E41E00DB69A5 /* ViewController.swift */,
+				73DE2AE11B85731F0068CB17 /* LaunchViewController.swift */,
 				732FC3321B84E41E00DB69A5 /* Main.storyboard */,
 				732FC3541B84E5C200DB69A5 /* Models */,
 				732FC35A1B84E99400DB69A5 /* Views */,
@@ -366,6 +369,7 @@
 				732FC3531B84E5BF00DB69A5 /* Plane.swift in Sources */,
 				732FC3591B84E99100DB69A5 /* PlaneView.swift in Sources */,
 				732FC32F1B84E41E00DB69A5 /* AppDelegate.swift in Sources */,
+				73DE2AE21B85731F0068CB17 /* LaunchViewController.swift in Sources */,
 				732FC3661B85281600DB69A5 /* ArrayExtensions.swift in Sources */,
 				732FC3641B85054500DB69A5 /* BlueSkyMapView.swift in Sources */,
 			);
