@@ -26,7 +26,9 @@ class Plane: NSObject, MKAnnotation {
             "Hartsfield-Jackson International Airport will have about 60,000 passengers today. You're in good company.",
             "Each pilot has well over 1,000 hours of flying before flying a commercial airline. You're in good hands.",
             "Many flight attendants will take up to 5 flights today, including yours.",
-            "Your flight is 20 times safer than the car ride to the airport. All is well."
+            "Your flight is 20 times safer than the car ride to the airport. All is well.",
+            "Conciously relaxing your muscles can help relieve anxiety. Remember to breath.",
+            "A plane lands safely every 55 seconds at Los Angeles International. You'll get there ok."
         ]
     }
 }

@@ -141,29 +141,38 @@ class ViewController: UIViewController {
         }
         
         // Animate in/out label
-        self.exerciseStepInstructionLabel.text = "Breathe in..."
-        UIView.animateWithDuration(0.33, delay: delay, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
-            self.exerciseStepInstructionLabel.alpha = 0.5
-        }, completion: { (success: Bool) in
-            UIView.animateWithDuration(0.33, delay: (duration * 0.5) - 0.66, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+        dispatch_after(delay, dispatch_get_main_queue()) {
+            self.exerciseStepInstructionLabel.text = "Breathe in..."
+            self.exerciseStepInstructionLabel.transform = CGAffineTransformMakeScale(0.4, 0.4)
+            self.exerciseStepInstructionLabel.alpha = 0.7
+        
+            UIView.animateWithDuration((duration * 0.5), delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
+                self.exerciseStepInstructionLabel.transform = CGAffineTransformMakeScale(1.1, 1.1)
                 self.exerciseStepInstructionLabel.alpha = 0.0
             }, completion: { (success: Bool) in
                 self.exerciseStepInstructionLabel.text = "Breathe out..."
-                UIView.animateWithDuration(0.33, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
-                    self.exerciseStepInstructionLabel.alpha = 0.5
+                UIView.animateWithDuration(0.1, animations: {
+                    self.exerciseStepInstructionLabel.alpha = 0.20
                 }, completion: { (success: Bool) in
-                    UIView.animateWithDuration(0.33, delay: (duration * 0.5) - 0.66, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                    UIView.animateWithDuration((duration * 0.5) - 0.25, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
+                        self.exerciseStepInstructionLabel.transform = CGAffineTransformMakeScale(0.4, 0.4)
                         self.exerciseStepInstructionLabel.alpha = 0.0
-                    }, completion: nil)
+                    }, completion: { (success: Bool) in
+                        UIView.animateWithDuration(0.25, animations: {
+                            self.exerciseStepInstructionLabel.alpha = 0.0
+                        }, completion: nil)
+                    })
                 })
             })
-        })
+        }
         
         // Animate map cross fade
         UIView.animateWithDuration(0.33, animations: {
             self.mapView.alpha = 0.0
         }, completion: { (success: Bool) in
             self.mapView.showAnnotations(airports, animated: false)
+            self.mapView.camera.altitude += 100000.0
+            
             UIView.animateWithDuration(0.33, delay: 1.0, options: UIViewAnimationOptions.CurveLinear, animations: {
                 self.mapView.alpha = 1.0
             }, completion: nil)
