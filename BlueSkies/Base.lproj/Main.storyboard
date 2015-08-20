@@ -200,25 +200,27 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40392156862745099" green="0.71372549019607845" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Csg-kY-H3O" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="24f-iH-6GG"/>
+                            <constraint firstAttribute="centerX" secondItem="Csg-kY-H3O" secondAttribute="centerX" id="8b6-Pl-2Tb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wty-BD-xmY" secondAttribute="trailing" constant="4" id="Cmk-Av-mYF"/>
                             <constraint firstItem="1Ju-Z1-YNu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="JGn-oG-vSM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Csg-kY-H3O" secondAttribute="trailing" constant="-16" id="MvP-Iu-Vo0"/>
+                            <constraint firstItem="Csg-kY-H3O" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="Kwu-5A-oQ0"/>
+                            <constraint firstItem="Csg-kY-H3O" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="QoO-1g-y32"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Ju-Z1-YNu" secondAttribute="trailing" constant="-16" id="XzT-dg-9ci"/>
                             <constraint firstItem="1Ju-Z1-YNu" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="Zdt-UY-fhQ"/>
-                            <constraint firstItem="Csg-kY-H3O" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="e3M-dg-qn6"/>
+                            <constraint firstAttribute="centerY" secondItem="Csg-kY-H3O" secondAttribute="centerY" id="eiM-bD-ltj"/>
                             <constraint firstItem="Wty-BD-xmY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="euA-Iq-5Wh"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1Ju-Z1-YNu" secondAttribute="bottom" id="mVU-dG-IjL"/>
                             <constraint firstItem="XaR-3k-gGO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="qoF-mr-zWA"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wty-BD-xmY" secondAttribute="bottom" id="sEd-Vc-ob0"/>
                             <constraint firstAttribute="centerX" secondItem="XaR-3k-gGO" secondAttribute="centerX" constant="-0.5" id="yh7-ls-yoK"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Csg-kY-H3O" secondAttribute="bottom" id="z5Z-5E-hsf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="exerciseStepInstructionLabel" destination="XaR-3k-gGO" id="BhU-c1-Eak"/>
                         <outlet property="exerciseStepView" destination="Wty-BD-xmY" id="MaT-wq-HXM"/>
+                        <outlet property="introInfoLabel" destination="Nj5-lB-exf" id="egb-Wx-NX3"/>
                         <outlet property="introView" destination="Csg-kY-H3O" id="hlg-Pn-yCP"/>
+                        <outlet property="introViewVerticalConstraint" destination="eiM-bD-ltj" id="Bg8-bq-R10"/>
                         <outlet property="mapView" destination="1Ju-Z1-YNu" id="c2i-Le-wy5"/>
                         <outlet property="swipeInstructionLabel" destination="n1j-cw-Eba" id="VUh-ss-KLx"/>
                         <outletCollection property="exerciseStepIndicators" destination="VTR-d8-iDW" collectionClass="NSMutableArray" id="2TP-0R-hI6"/>

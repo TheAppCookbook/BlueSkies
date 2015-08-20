@@ -33,6 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.audioPlayer?.prepareToPlay()
         
         self.audioPlayer?.volume = 1.0
+        self.audioPlayer?.numberOfLoops = -1
+        
         self.audioPlayer?.play()
     }
 }

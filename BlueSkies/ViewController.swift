@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet var exerciseStepView: UIView!
     @IBOutlet var exerciseStepIndicators: [UIImageView] = []
     
+    @IBOutlet var introViewVerticalConstraint: NSLayoutConstraint!
     @IBOutlet var introView: UIView!
+    @IBOutlet var introInfoLabel: UILabel!
     @IBOutlet var swipeInstructionLabel: UILabel!
     
     private var airports: [Airport] = []
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
     private var fullyLoaded: Bool = false
     
     private var exerciseStep: Int = 0
-    private let numberOfExerciseSteps: Int = 6
+    private let numberOfExerciseSteps: Int = 2
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
@@ -62,11 +64,9 @@ class ViewController: UIViewController {
         if !self.fullyLoaded { return }
         
         UIView.animateWithDuration(0.33, animations: {
-            var frame = self.introView.frame
-            frame.origin = CGPoint(x: frame.origin.x, y: -frame.size.height)
-            self.introView.frame = frame
+            self.introViewVerticalConstraint.constant = self.view.bounds.height
+            self.introView.layoutIfNeeded()
         }, completion: { (success: Bool) in
-            self.introView.removeFromSuperview()
             UIView.animateWithDuration(0.33) {
                 self.exerciseStepView.alpha = 1.0
             }
@@ -89,6 +89,7 @@ class ViewController: UIViewController {
     // MARK: Exercise Handlers
     private func performNextExerciseStep() {
         if self.exerciseStep == self.numberOfExerciseSteps {
+            self.resetExercises()
             return
         }
         
@@ -166,6 +167,22 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(0.33, delay: 1.0, options: UIViewAnimationOptions.CurveLinear, animations: {
                 self.mapView.alpha = 1.0
             }, completion: nil)
+        })
+    }
+    
+    private func resetExercises() {
+        self.exerciseStep = 0
+        self.introInfoLabel.text = Plane.calmingFacts().random()
+        
+        UIView.animateWithDuration(0.33, animations: {
+            self.exerciseStepView.alpha = 0.0
+            
+            self.introViewVerticalConstraint.constant = 0
+            self.introView.layoutIfNeeded()
+        }, completion: { (success: Bool) in
+            for exerciseStepIndicator in self.exerciseStepIndicators {
+                exerciseStepIndicator.image = UIImage(named: "empty-plane")
+            }
         })
     }
 }
