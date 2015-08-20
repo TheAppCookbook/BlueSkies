@@ -67,7 +67,7 @@ class PlaneView: MKAnnotationView {
         // Scale. Up for 50%, back Down for 50%
         UIView.animateWithDuration(duration * 0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
             self.transform = CGAffineTransformScale(self.transform,
-                5.0, 5.0)
+                8.0, 8.0)
         }, completion: { (success: Bool) in
             UIView.animateWithDuration(duration * 0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
                 self.transform = CGAffineTransformScale(self.transform,

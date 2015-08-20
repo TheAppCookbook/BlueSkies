@@ -26,6 +26,10 @@ extension CLLocation {
         let lonDiff = lon2 - lon1
         
         var angle = atan2(lonDiff, latDiff) * CGFloat(180.0 / M_PI)
+        if angle < 0 {
+            angle += 360.0
+        }
+        
         return CLLocationDegrees(angle)
     }
 }
