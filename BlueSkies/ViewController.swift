@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     private var fullyLoaded: Bool = false
     
     private var exerciseStep: Int = 0
-    private let numberOfExerciseSteps: Int = 2
+    private let numberOfExerciseSteps: Int = 6
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
