@@ -49,7 +49,7 @@
 		732FC3331B84E41E00DB69A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		732FC3351B84E41E00DB69A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		732FC3381B84E41E00DB69A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		732FC33E1B84E41E00DB69A5 /* BlueSkiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BlueSkiesTests.xctest; path = "Blue SkiesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		732FC33E1B84E41E00DB69A5 /* Blue SkiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue SkiesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		732FC3431B84E41E00DB69A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		732FC3441B84E41E00DB69A5 /* BlueSkiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSkiesTests.swift; sourceTree = "<group>"; };
 		732FC34E1B84E46600DB69A5 /* airports.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.dat; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				732FC3291B84E41E00DB69A5 /* Blue Skies.app */,
-				732FC33E1B84E41E00DB69A5 /* BlueSkiesTests.xctest */,
+				732FC33E1B84E41E00DB69A5 /* Blue SkiesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		732FC3281B84E41E00DB69A5 /* BlueSkies */ = {
+		732FC3281B84E41E00DB69A5 /* Blue Skies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "BlueSkies" */;
+			buildConfigurationList = 732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "Blue Skies" */;
 			buildPhases = (
 				966F783C39514683AE1B25A5 /* Check Pods Manifest.lock */,
 				732FC3251B84E41E00DB69A5 /* Sources */,
@@ -221,14 +221,14 @@
 			);
 			dependencies = (
 			);
-			name = BlueSkies;
+			name = "Blue Skies";
 			productName = BlueSkies;
 			productReference = 732FC3291B84E41E00DB69A5 /* Blue Skies.app */;
 			productType = "com.apple.product-type.application";
 		};
-		732FC33D1B84E41E00DB69A5 /* BlueSkiesTests */ = {
+		732FC33D1B84E41E00DB69A5 /* Blue SkiesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 732FC34B1B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "BlueSkiesTests" */;
+			buildConfigurationList = 732FC34B1B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "Blue SkiesTests" */;
 			buildPhases = (
 				732FC33A1B84E41E00DB69A5 /* Sources */,
 				732FC33B1B84E41E00DB69A5 /* Frameworks */,
@@ -239,9 +239,9 @@
 			dependencies = (
 				732FC3401B84E41E00DB69A5 /* PBXTargetDependency */,
 			);
-			name = BlueSkiesTests;
+			name = "Blue SkiesTests";
 			productName = BlueSkiesTests;
-			productReference = 732FC33E1B84E41E00DB69A5 /* BlueSkiesTests.xctest */;
+			productReference = 732FC33E1B84E41E00DB69A5 /* Blue SkiesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +267,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 732FC3241B84E41E00DB69A5 /* Build configuration list for PBXProject "BlueSkies" */;
+			buildConfigurationList = 732FC3241B84E41E00DB69A5 /* Build configuration list for PBXProject "Blue Skies" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -280,8 +280,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				732FC3281B84E41E00DB69A5 /* BlueSkies */,
-				732FC33D1B84E41E00DB69A5 /* BlueSkiesTests */,
+				732FC3281B84E41E00DB69A5 /* Blue Skies */,
+				732FC33D1B84E41E00DB69A5 /* Blue SkiesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -388,7 +388,7 @@
 /* Begin PBXTargetDependency section */
 		732FC3401B84E41E00DB69A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 732FC3281B84E41E00DB69A5 /* BlueSkies */;
+			target = 732FC3281B84E41E00DB69A5 /* Blue Skies */;
 			targetProxy = 732FC33F1B84E41E00DB69A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -530,8 +530,8 @@
 				);
 				INFOPLIST_FILE = BlueSkiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueSkies.app/BlueSkies";
+				PRODUCT_NAME = "Blue SkiesTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blue Skies.app/Blue Skies";
 			};
 			name = Debug;
 		};
@@ -545,15 +545,15 @@
 				);
 				INFOPLIST_FILE = BlueSkiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueSkies.app/BlueSkies";
+				PRODUCT_NAME = "Blue SkiesTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blue Skies.app/Blue Skies";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		732FC3241B84E41E00DB69A5 /* Build configuration list for PBXProject "BlueSkies" */ = {
+		732FC3241B84E41E00DB69A5 /* Build configuration list for PBXProject "Blue Skies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				732FC3461B84E41E00DB69A5 /* Debug */,
@@ -562,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "BlueSkies" */ = {
+		732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "Blue Skies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				732FC3491B84E41E00DB69A5 /* Debug */,
@@ -571,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		732FC34B1B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "BlueSkiesTests" */ = {
+		732FC34B1B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "Blue SkiesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				732FC34C1B84E41E00DB69A5 /* Debug */,

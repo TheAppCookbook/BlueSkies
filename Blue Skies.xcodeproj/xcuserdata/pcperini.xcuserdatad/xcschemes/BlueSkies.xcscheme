@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "732FC3281B84E41E00DB69A5"
-               BuildableName = "BlueSkies.app"
-               BlueprintName = "BlueSkies"
-               ReferencedContainer = "container:BlueSkies.xcodeproj">
+               BuildableName = "Blue Skies.app"
+               BlueprintName = "Blue Skies"
+               ReferencedContainer = "container:Blue Skies.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "732FC33D1B84E41E00DB69A5"
-               BuildableName = "BlueSkiesTests.xctest"
-               BlueprintName = "BlueSkiesTests"
-               ReferencedContainer = "container:BlueSkies.xcodeproj">
+               BuildableName = "Blue SkiesTests.xctest"
+               BlueprintName = "Blue SkiesTests"
+               ReferencedContainer = "container:Blue Skies.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "732FC33D1B84E41E00DB69A5"
-               BuildableName = "BlueSkiesTests.xctest"
-               BlueprintName = "BlueSkiesTests"
-               ReferencedContainer = "container:BlueSkies.xcodeproj">
+               BuildableName = "Blue SkiesTests.xctest"
+               BlueprintName = "Blue SkiesTests"
+               ReferencedContainer = "container:Blue Skies.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "732FC3281B84E41E00DB69A5"
-            BuildableName = "BlueSkies.app"
-            BlueprintName = "BlueSkies"
-            ReferencedContainer = "container:BlueSkies.xcodeproj">
+            BuildableName = "Blue Skies.app"
+            BlueprintName = "Blue Skies"
+            ReferencedContainer = "container:Blue Skies.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "732FC3281B84E41E00DB69A5"
-            BuildableName = "BlueSkies.app"
-            BlueprintName = "BlueSkies"
-            ReferencedContainer = "container:BlueSkies.xcodeproj">
+            BuildableName = "Blue Skies.app"
+            BlueprintName = "Blue Skies"
+            ReferencedContainer = "container:Blue Skies.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "732FC3281B84E41E00DB69A5"
-            BuildableName = "BlueSkies.app"
-            BlueprintName = "BlueSkies"
-            ReferencedContainer = "container:BlueSkies.xcodeproj">
+            BuildableName = "Blue Skies.app"
+            BlueprintName = "Blue Skies"
+            ReferencedContainer = "container:Blue Skies.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
