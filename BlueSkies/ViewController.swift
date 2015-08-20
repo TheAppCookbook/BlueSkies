@@ -8,18 +8,19 @@
 
 import UIKit
 import MapKit
-import GradientView
+import ACBInfoPanel
 
 class ViewController: UIViewController {
     // MARK: Properties
     @IBOutlet var mapView: MKMapView!
+    
+    @IBOutlet var exerciseStepInstructionLabel: UILabel!
     @IBOutlet var exerciseStepView: UIView!
     @IBOutlet var exerciseStepIndicators: [UIImageView] = []
     
     @IBOutlet var introView: UIView!
     @IBOutlet var swipeInstructionLabel: UILabel!
     
-
     private var airports: [Airport] = []
     
     private var mapViewLoaded: Bool = false
@@ -45,6 +46,7 @@ class ViewController: UIViewController {
         if self.exerciseStep != 0 {
             self.introView.removeFromSuperview()
         }
+                
     }
     
     private func finalizeLoad() {
@@ -75,6 +77,15 @@ class ViewController: UIViewController {
         })
     }
     
+    @IBAction func infoTapGestureWasRecognized(tapGestureRecognizer: UITapGestureRecognizer!) {
+        let infoPanel = ACBInfoPanelViewController()
+        infoPanel.ingredient = "Flight Anxiety"
+        
+        self.presentViewController(infoPanel,
+            animated: true,
+            completion: nil)
+    }
+    
     // MARK: Exercise Handlers
     private func performNextExerciseStep() {
         if self.exerciseStep == self.numberOfExerciseSteps {
@@ -83,8 +94,9 @@ class ViewController: UIViewController {
         
         self.mapView.removeAnnotations(self.mapView.annotations)
         
-        let duration = [4.0, 4.0, 6.0, 6.0, 8.0, 10.0][self.exerciseStep]
+        let duration = [8.0, 8.0, 12.0, 12.0, 16.0, 20.0][self.exerciseStep]
         let numberOfFlights = [1, 1, 2, 3, 2, 1][self.exerciseStep]
+        let delay = 2.0
         
         var airports: [Airport] = []
         
@@ -110,7 +122,7 @@ class ViewController: UIViewController {
             planes.append(plane)
             self.mapView.addAnnotation(plane)
             
-            dispatch_after(2.0, dispatch_get_main_queue()) {
+            dispatch_after(delay, dispatch_get_main_queue()) {
                 let planeView = self.mapView.viewForAnnotation(plane) as! PlaneView
                 planeView.flyToCoordinate(secondAirport.coordinate, duration: duration) {
                     landedPlanes.append(planeView.annotation as! Plane)
@@ -118,7 +130,7 @@ class ViewController: UIViewController {
                     if landedPlanes.count == planes.count {
                         self.exerciseStepIndicators[self.exerciseStep].image = UIImage(named: "plane")
                         
-                        dispatch_after(2.0, dispatch_get_main_queue()) {
+                        dispatch_after(delay, dispatch_get_main_queue()) {
                             self.exerciseStep += 1
                             self.performNextExerciseStep()
                         }
@@ -127,7 +139,34 @@ class ViewController: UIViewController {
             }
         }
         
-        self.mapView.showAnnotations(airports, animated: true)
+        // Animate in/out label
+        self.exerciseStepInstructionLabel.text = "Breathe in..."
+        UIView.animateWithDuration(0.33, delay: delay, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            self.exerciseStepInstructionLabel.alpha = 0.5
+        }, completion: { (success: Bool) in
+            UIView.animateWithDuration(0.33, delay: (duration * 0.5) - 0.66, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                self.exerciseStepInstructionLabel.alpha = 0.0
+            }, completion: { (success: Bool) in
+                self.exerciseStepInstructionLabel.text = "Breathe out..."
+                UIView.animateWithDuration(0.33, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                    self.exerciseStepInstructionLabel.alpha = 0.5
+                }, completion: { (success: Bool) in
+                    UIView.animateWithDuration(0.33, delay: (duration * 0.5) - 0.66, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                        self.exerciseStepInstructionLabel.alpha = 0.0
+                    }, completion: nil)
+                })
+            })
+        })
+        
+        // Animate map cross fade
+        UIView.animateWithDuration(0.33, animations: {
+            self.mapView.alpha = 0.0
+        }, completion: { (success: Bool) in
+            self.mapView.showAnnotations(airports, animated: false)
+            UIView.animateWithDuration(0.33, delay: 1.0, options: UIViewAnimationOptions.CurveLinear, animations: {
+                self.mapView.alpha = 1.0
+            }, completion: nil)
+        })
     }
 }
 

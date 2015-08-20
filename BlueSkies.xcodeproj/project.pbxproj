@@ -23,6 +23,8 @@
 		732FC3641B85054500DB69A5 /* BlueSkyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3631B85054500DB69A5 /* BlueSkyMapView.swift */; };
 		732FC3661B85281600DB69A5 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3651B85281600DB69A5 /* ArrayExtensions.swift */; };
 		732FC36A1B85409000DB69A5 /* DispatchExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732FC3691B85409000DB69A5 /* DispatchExtensions.swift */; };
+		732FC36C1B85560800DB69A5 /* Oxygen_Garden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 732FC36B1B85560800DB69A5 /* Oxygen_Garden.mp3 */; };
+		73DE2AE01B8559100068CB17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732FC36D1B85574D00DB69A5 /* AVFoundation.framework */; };
 		E21C7215A1E227EC33892352 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F891DAEF7D89575AAD62825 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,14 +41,14 @@
 /* Begin PBXFileReference section */
 		3A26B36B135481EC2FF55B01 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3F891DAEF7D89575AAD62825 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		732FC3291B84E41E00DB69A5 /* BlueSkies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueSkies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		732FC3291B84E41E00DB69A5 /* Blue Skies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Skies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		732FC32D1B84E41E00DB69A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		732FC32E1B84E41E00DB69A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		732FC3301B84E41E00DB69A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		732FC3331B84E41E00DB69A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		732FC3351B84E41E00DB69A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		732FC3381B84E41E00DB69A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		732FC33E1B84E41E00DB69A5 /* BlueSkiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueSkiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		732FC33E1B84E41E00DB69A5 /* BlueSkiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BlueSkiesTests.xctest; path = "Blue SkiesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		732FC3431B84E41E00DB69A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		732FC3441B84E41E00DB69A5 /* BlueSkiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSkiesTests.swift; sourceTree = "<group>"; };
 		732FC34E1B84E46600DB69A5 /* airports.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.dat; sourceTree = "<group>"; };
@@ -59,6 +61,9 @@
 		732FC3631B85054500DB69A5 /* BlueSkyMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueSkyMapView.swift; sourceTree = "<group>"; };
 		732FC3651B85281600DB69A5 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		732FC3691B85409000DB69A5 /* DispatchExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchExtensions.swift; sourceTree = "<group>"; };
+		732FC36B1B85560800DB69A5 /* Oxygen_Garden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Oxygen_Garden.mp3; sourceTree = "<group>"; };
+		732FC36D1B85574D00DB69A5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		732FC3701B8557D100DB69A5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		C50428D52092EC54C67761A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DE2AE01B8559100068CB17 /* AVFoundation.framework in Frameworks */,
 				732FC3511B84E47C00DB69A5 /* MapKit.framework in Frameworks */,
 				E21C7215A1E227EC33892352 /* Pods.framework in Frameworks */,
 			);
@@ -85,6 +91,8 @@
 		34B51DC07CF8D9A46DE371ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				732FC3701B8557D100DB69A5 /* AVKit.framework */,
+				732FC36D1B85574D00DB69A5 /* AVFoundation.framework */,
 				3F891DAEF7D89575AAD62825 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -113,7 +121,7 @@
 		732FC32A1B84E41E00DB69A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				732FC3291B84E41E00DB69A5 /* BlueSkies.app */,
+				732FC3291B84E41E00DB69A5 /* Blue Skies.app */,
 				732FC33E1B84E41E00DB69A5 /* BlueSkiesTests.xctest */,
 			);
 			name = Products;
@@ -130,6 +138,7 @@
 				732FC3571B84E60800DB69A5 /* Categories */,
 				732FC3351B84E41E00DB69A5 /* Images.xcassets */,
 				732FC3371B84E41E00DB69A5 /* LaunchScreen.xib */,
+				732FC36B1B85560800DB69A5 /* Oxygen_Garden.mp3 */,
 				732FC34E1B84E46600DB69A5 /* airports.dat */,
 				732FC32C1B84E41E00DB69A5 /* Supporting Files */,
 			);
@@ -194,9 +203,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		732FC3281B84E41E00DB69A5 /* Blue Skies */ = {
+		732FC3281B84E41E00DB69A5 /* BlueSkies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "Blue Skies" */;
+			buildConfigurationList = 732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "BlueSkies" */;
 			buildPhases = (
 				966F783C39514683AE1B25A5 /* Check Pods Manifest.lock */,
 				732FC3251B84E41E00DB69A5 /* Sources */,
@@ -209,9 +218,9 @@
 			);
 			dependencies = (
 			);
-			name = "Blue Skies";
+			name = BlueSkies;
 			productName = BlueSkies;
-			productReference = 732FC3291B84E41E00DB69A5 /* BlueSkies.app */;
+			productReference = 732FC3291B84E41E00DB69A5 /* Blue Skies.app */;
 			productType = "com.apple.product-type.application";
 		};
 		732FC33D1B84E41E00DB69A5 /* BlueSkiesTests */ = {
@@ -268,7 +277,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				732FC3281B84E41E00DB69A5 /* Blue Skies */,
+				732FC3281B84E41E00DB69A5 /* BlueSkies */,
 				732FC33D1B84E41E00DB69A5 /* BlueSkiesTests */,
 			);
 		};
@@ -279,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732FC36C1B85560800DB69A5 /* Oxygen_Garden.mp3 in Resources */,
 				732FC3341B84E41E00DB69A5 /* Main.storyboard in Resources */,
 				732FC3391B84E41E00DB69A5 /* LaunchScreen.xib in Resources */,
 				732FC3361B84E41E00DB69A5 /* Images.xcassets in Resources */,
@@ -374,7 +384,7 @@
 /* Begin PBXTargetDependency section */
 		732FC3401B84E41E00DB69A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 732FC3281B84E41E00DB69A5 /* Blue Skies */;
+			target = 732FC3281B84E41E00DB69A5 /* BlueSkies */;
 			targetProxy = 732FC33F1B84E41E00DB69A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -548,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "Blue Skies" */ = {
+		732FC3481B84E41E00DB69A5 /* Build configuration list for PBXNativeTarget "BlueSkies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				732FC3491B84E41E00DB69A5 /* Debug */,

@@ -7,7 +7,6 @@
 //
 
 import MapKit
-import GradientView
 
 class BlueSkyMapView: MKMapView {
     // MARK: Class Constants
@@ -19,7 +18,10 @@ class BlueSkyMapView: MKMapView {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        self.addOverlay(MKTileOverlay(URLTemplate: BlueSkyMapView.urlTemplate), level: MKOverlayLevel.AboveLabels)
+        let tileOverlay = MKTileOverlay(URLTemplate: BlueSkyMapView.urlTemplate)
+        tileOverlay.canReplaceMapContent = true
+        
+        self.addOverlay(tileOverlay, level: MKOverlayLevel.AboveLabels)
         self.addOverlay(BlueSkyMapViewGradientOverlay(), level: MKOverlayLevel.AboveLabels)
     }
 }
