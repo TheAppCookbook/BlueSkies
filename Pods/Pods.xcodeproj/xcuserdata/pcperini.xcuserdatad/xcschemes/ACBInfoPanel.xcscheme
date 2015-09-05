@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F904BD17496B747A8165A8B3"
+               BlueprintIdentifier = "022B4E8E598FE3278572059B"
                BuildableName = "ACBInfoPanel.framework"
                BlueprintName = "ACBInfoPanel"
                ReferencedContainer = "container:Pods.xcodeproj">

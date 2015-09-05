@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4BFE5D4A-101F-4A50-BEC6-2CA1B94D3A8F</string>
+	<string>8C1AE1E8-905A-4814-843B-355B66E82D38</string>
 	<key>IDESourceControlProjectName</key>
-	<string>BlueSkies</string>
+	<string>Blue Skies</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>2DCBC56A5DEF8345DAFE8B22E751A0BC732080A5</key>
 		<string>github.com:TheAppCookbook/BlueSkies.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BlueSkies.xcworkspace</string>
+	<string>Blue Skies.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2DCBC56A5DEF8345DAFE8B22E751A0BC732080A5</key>

@@ -25,12 +25,12 @@ extension CLLocation {
         let latDiff = lat2 - lat1
         let lonDiff = lon2 - lon1
         
-        var angle = atan2(lonDiff, latDiff) * CGFloat(180.0 / M_PI)
+        var angle = atan2(lonDiff, latDiff).toDirection()
         if angle < 0 {
             angle += 360.0
         }
         
-        return CLLocationDegrees(angle)
+        return angle
     }
 }
 
@@ -41,7 +41,7 @@ extension CLLocationDegrees {
 }
 
 extension CGFloat {
-    func toDegrees() -> CLLocationDegrees {
-        return CLLocationDegrees(CGFloat(self) * 180.0 / CGFloat(M_PI))
+    func toDirection() -> CLLocationDirection {
+        return CLLocationDirection(CGFloat(self) * 180.0 / CGFloat(M_PI))
     }
 }

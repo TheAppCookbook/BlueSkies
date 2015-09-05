@@ -32,7 +32,7 @@ class Airport: NSObject, MKAnnotation {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) {
             let fileURL = NSBundle.mainBundle().URLForResource("airports", withExtension: "dat")
-            let airports: [Airport] = (NSArray(contentsOfCSVURL: fileURL, options: nil) as! [NSArray]).map { (arr: NSArray) in
+            let airports: [Airport] = (NSArray(contentsOfCSVURL: fileURL, options: []) as! [NSArray]).map { (arr: NSArray) in
                 let title = arr[4] as! String
                 let lat = CLLocationDegrees((arr[6] as! NSString).doubleValue)
                 let lon = CLLocationDegrees((arr[7] as! NSString).doubleValue)

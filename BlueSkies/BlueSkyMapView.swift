@@ -39,7 +39,7 @@ class BlueSkyMapViewGradientOverlayRenderer: MKOverlayRenderer {
         UIColor(red: 0.85, green: 0.96, blue: 1.00, alpha: 0.80)
     ]
     
-    override init!(overlay: MKOverlay!) {
+    override init(overlay: MKOverlay) {
         super.init(overlay: overlay)
     }
     
@@ -55,7 +55,7 @@ class BlueSkyMapViewGradientOverlayRenderer: MKOverlayRenderer {
             let cgColorSpace = CGColorGetColorSpace(cgColor)
             
             // The color's color space is RGB, simply add it.
-            if CGColorSpaceGetModel(cgColorSpace).value == colorSpaceModel.value {
+            if CGColorSpaceGetModel(cgColorSpace).rawValue == colorSpaceModel.rawValue {
                 return cgColor as AnyObject!
             }
             
@@ -72,7 +72,7 @@ class BlueSkyMapViewGradientOverlayRenderer: MKOverlayRenderer {
         self.gradient = CGGradientCreateWithColors(colorSpace, gradientColors, nil)
     }
     
-    override func drawMapRect(mapRect: MKMapRect, zoomScale: MKZoomScale, inContext context: CGContext!) {
+    override func drawMapRect(mapRect: MKMapRect, zoomScale: MKZoomScale, inContext context: CGContext) {
         self.updateGradient()
         
         if let gradient = self.gradient {

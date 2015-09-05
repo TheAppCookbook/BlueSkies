@@ -24,12 +24,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func playMusic() {
-        // Play music
-        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient, error: nil)
-        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        do {
+            // Play music
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+        }
         
-        self.audioPlayer = AVAudioPlayer(contentsOfURL: NSBundle.mainBundle().URLForResource("Oxygen_Garden", withExtension: "mp3"),
-            error: nil)
+        do {
+            self.audioPlayer = try AVAudioPlayer(contentsOfURL: NSBundle.mainBundle().URLForResource("Oxygen_Garden", withExtension: "mp3")!)
+        } catch _ {
+            self.audioPlayer = nil
+        }
+        
         self.audioPlayer?.prepareToPlay()
         
         self.audioPlayer?.volume = 1.0

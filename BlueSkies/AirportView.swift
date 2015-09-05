@@ -21,7 +21,7 @@ class AirportView: MKAnnotationView {
     }
     
     // MARK: Initializers
-    override init!(annotation: MKAnnotation!, reuseIdentifier: String!) {
+    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         self.frame = CGRectMake(0, 0, 20, 20)
         self.layer.masksToBounds = true

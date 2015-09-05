@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D4E1F60121A669595DD4BA0"
+               BlueprintIdentifier = "251629827FCCFD93B74564CF"
                BuildableName = "CHCSVParser.framework"
                BlueprintName = "CHCSVParser"
                ReferencedContainer = "container:Pods.xcodeproj">

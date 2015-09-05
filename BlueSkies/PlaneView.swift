@@ -14,12 +14,12 @@ class PlaneView: MKAnnotationView {
     
     // MARK: Properties
     var coordinate: CLLocationCoordinate2D {
-        get { return self.annotation.coordinate }
+        get { return self.annotation!.coordinate }
         set { (self.annotation as! Plane).coordinate = newValue }
     }
     
     // MARK: Initializers
-    override init!(annotation: MKAnnotation!, reuseIdentifier: String!) {
+    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         self.image = UIImage(named: "plane")
     }

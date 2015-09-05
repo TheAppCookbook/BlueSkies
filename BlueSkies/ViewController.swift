@@ -123,7 +123,7 @@ class ViewController: UIViewController {
             planes.append(plane)
             self.mapView.addAnnotation(plane)
             
-            dispatch_after(delay, dispatch_get_main_queue()) {
+            dispatch_after(delay, queue: dispatch_get_main_queue()) {
                 let planeView = self.mapView.viewForAnnotation(plane) as! PlaneView
                 planeView.flyToCoordinate(secondAirport.coordinate, duration: duration) {
                     landedPlanes.append(planeView.annotation as! Plane)
@@ -131,7 +131,7 @@ class ViewController: UIViewController {
                     if landedPlanes.count == planes.count {
                         self.exerciseStepIndicators[self.exerciseStep].image = UIImage(named: "plane")
                         
-                        dispatch_after(delay, dispatch_get_main_queue()) {
+                        dispatch_after(delay, queue: dispatch_get_main_queue()) {
                             self.exerciseStep += 1
                             self.performNextExerciseStep()
                         }
@@ -141,7 +141,7 @@ class ViewController: UIViewController {
         }
         
         // Animate in/out label
-        dispatch_after(delay, dispatch_get_main_queue()) {
+        dispatch_after(delay, queue: dispatch_get_main_queue()) {
             self.exerciseStepInstructionLabel.text = "Breathe in..."
             self.exerciseStepInstructionLabel.transform = CGAffineTransformMakeScale(0.4, 0.4)
             self.exerciseStepInstructionLabel.alpha = 0.7
@@ -197,7 +197,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MKMapViewDelegate {
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView! {
         var view: MKAnnotationView?
         
         switch annotation {
@@ -224,7 +224,7 @@ extension ViewController: MKMapViewDelegate {
         return view!
     }
     
-    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer! {
         let renderer: MKOverlayRenderer
         
         switch overlay {
@@ -242,7 +242,7 @@ extension ViewController: MKMapViewDelegate {
         return renderer
     }
     
-    func mapViewDidFinishRenderingMap(mapView: MKMapView!, fullyRendered: Bool) {
+    func mapViewDidFinishRenderingMap(mapView: MKMapView, fullyRendered: Bool) {
         UIView.animateWithDuration(1.33) {
             mapView.alpha = 1.0
         }
