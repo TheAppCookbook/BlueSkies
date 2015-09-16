@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ACBInfoPanel:
-    :commit: c418d6be0b4ffda3c851e47191e2d6402f66fb0e
+    :commit: 610ab98843f5181c128509584cd173ad9779ca6a
     :git: git@github.com:TheAppCookbook/templates.git
 
 SPEC CHECKSUMS:

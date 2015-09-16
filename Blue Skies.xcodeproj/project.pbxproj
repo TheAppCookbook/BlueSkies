@@ -254,7 +254,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = AppCookbook;
 				TargetAttributes = {
 					732FC3281B84E41E00DB69A5 = {
@@ -439,6 +439,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -506,6 +507,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlueSkies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Blue Skies";
 			};
 			name = Debug;
@@ -517,6 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlueSkies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Blue Skies";
 			};
 			name = Release;
@@ -535,6 +538,7 @@
 				);
 				INFOPLIST_FILE = BlueSkiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Blue SkiesTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blue Skies.app/Blue Skies";
 			};
@@ -550,6 +554,7 @@
 				);
 				INFOPLIST_FILE = BlueSkiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Blue SkiesTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blue Skies.app/Blue Skies";
 			};

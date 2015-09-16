@@ -15,9 +15,9 @@ class BlueSkyMapView: MKMapView {
     
     
     // MARK: Initializers
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+    
         let tileOverlay = MKTileOverlay(URLTemplate: BlueSkyMapView.urlTemplate)
         tileOverlay.canReplaceMapContent = true
         
@@ -81,7 +81,7 @@ class BlueSkyMapViewGradientOverlayRenderer: MKOverlayRenderer {
                 gradient,
                 CGPoint(x: CGRectGetMidX(rect), y: CGRectGetMinY(rect)),
                 CGPoint(x: CGRectGetMidX(rect), y: CGRectGetMaxY(rect)),
-                CGGradientDrawingOptions.allZeros)
+                CGGradientDrawingOptions())
         }
     }
 }

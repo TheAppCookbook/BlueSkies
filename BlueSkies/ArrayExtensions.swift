@@ -9,7 +9,7 @@
 import Foundation
 
 extension Array {
-    func random() -> T? {
+    func random() -> Element? {
         if self.count == 0 { return nil }
         return self[Int(arc4random_uniform(UInt32(self.count)))]
     }

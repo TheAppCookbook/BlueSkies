@@ -52,10 +52,7 @@ class ViewController: UIViewController {
     }
     
     private func finalizeLoad() {
-        UIView.animateWithDuration(0.33) {
-            self.swipeInstructionLabel.alpha = 1.0
-        }
-        
+        self.swipeInstructionLabel.text = "SWIPE TO TAKE OFF"
         self.fullyLoaded = true
     }
     
@@ -197,7 +194,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MKMapViewDelegate {
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         var view: MKAnnotationView?
         
         switch annotation {
@@ -224,7 +221,7 @@ extension ViewController: MKMapViewDelegate {
         return view!
     }
     
-    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer! {
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer: MKOverlayRenderer
         
         switch overlay {
