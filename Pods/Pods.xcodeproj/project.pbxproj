@@ -7,92 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		159B36CF8318139082F796D078DFC779 /* NSURL+ACBUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AF4F2924E702008523E57644AC1A90 /* NSURL+ACBUrls.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		21B5AAEFB14A9C94CD1B992EEC3A0005 /* ACBInfoPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C688B279EC2572256AD0920F297E37C /* ACBInfoPanel-dummy.m */; };
-		3685A6C20F02280C682DE9130AE737D9 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B827A213B7FD578320F3911A70FBA92D /* CHCSVParser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		443B0A66F2BE7B46DF40A3B848D4B650 /* ACBInfoPanelResources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EDBD5D6A3EB026343CCADD825AA7DE /* ACBInfoPanelResources.xcassets */; };
+		00B66D19FAC11CFDC229447C7C2257E2 /* ACBInfoPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B469E46E3B6032081BF88DDC79CCBCD /* ACBInfoPanelViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0E5AD29B2DFF3133D8D89662F7719B33 /* CHCSVParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F21D826CE9A56A472811762B94E54 /* CHCSVParser-dummy.m */; };
+		3C89F00EFCD50CD0DC6D8178532C97CB /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19926233D9F574F8FC7F13CE3ECA2A84 /* CHCSVParser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		65F195313466EC735E817F0A616BC17B /* ACBInfoPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD1AB43BD73374D03D756789D7CEB2 /* ACBInfoPanel-dummy.m */; };
 		6BF8D897A8D5731A84E3240E8EEEFD8B /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF5A98FF501135DF89168CC774420F /* Pods-dummy.m */; };
-		71213AB89068E62D403EBD4DFA03EB96 /* ACBInfoPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B556FDE6D264FA484E04B25ABD2CEDB /* ACBInfoPanelViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		89485D59B5D2CBB56B012B42C8CB7B10 /* ACBInfoPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4578387BD96D5231609B2518DCA5493 /* ACBInfoPanelViewController.xib */; };
-		9259CBB9BE4786F20CB4FF4A3E95CA40 /* CHCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BA1A1D3CE48215D5349624F739398F /* CHCSVParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9402227F6813C26C378084DA5209FAC8 /* CHCSVParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B10221986A45AF271A483421E4FF8 /* CHCSVParser-dummy.m */; };
-		BEA3A0949120D9F20487B4B14D1B2653 /* ACBInfoPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F6F141AE2BE42953C43F1D0638857B /* ACBInfoPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0D822B294D4F3ABB2972A8D572C40E7 /* CHCSVParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03AB8940FD5B00E0110DA9E3F4EB6B78 /* CHCSVParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B3536870FF1561F93DAE5A0AB285D54 /* CHCSVParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F3E8345038858356B13240392BB8088 /* CHCSVParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC3474B986287BCB61138F601D105FD /* CHCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A53E2523E66E2C71B6675A2B0B8E3DC4 /* CHCSVParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		946D15248D70431A89B8758698AAA3BC /* ACBInfoPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BC4A986641E764A9475A82D70984563 /* ACBInfoPanelViewController.xib */; };
+		94E5AB3BEC2B8674CAF02B49C003E034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83A8125AD1AF044193F6891FD82F7E3 /* Foundation.framework */; };
+		AA8E05DA77AA71C9428B40A63DBD7072 /* ACBInfoPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E7958D36E5B435C46C3D6D1D9FD431 /* ACBInfoPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B10ACDA3FF14D6F37273DC57AF1315F8 /* ACBInfoPanelResources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5223D915D5C55DDC94B4B4C054AE8D45 /* ACBInfoPanelResources.xcassets */; };
+		C511B97D308D3B02A881EF52F0A94DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83A8125AD1AF044193F6891FD82F7E3 /* Foundation.framework */; };
 		C58CAF8A2D0A87A80956EC19ECEB780F /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D10F459E79B5EE20E7C1040180E4D2B9 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE615B204AEDBC54EA5AD1861C922B9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9553E91B34EAD8D824D32AF180B3CDD2 /* Foundation.framework */; };
-		E5442C729FB073F73FB35043621B37FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9553E91B34EAD8D824D32AF180B3CDD2 /* Foundation.framework */; };
-		FC6DD198E1AA1040E95B549CC01D3174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9553E91B34EAD8D824D32AF180B3CDD2 /* Foundation.framework */; };
+		CE615B204AEDBC54EA5AD1861C922B9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83A8125AD1AF044193F6891FD82F7E3 /* Foundation.framework */; };
+		DC30704FA27830A897B861479D5F5F69 /* NSURL+ACBUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE941A7FD7E800021C4A5EEB9D4D81B0 /* NSURL+ACBUrls.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6B1DA0A992ECB000CC88146DE2D14B29 /* PBXContainerItemProxy */ = {
+		A68A84655E210DBBD3F34337BC677799 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19C136CABCEA95445445DC79AB711034;
-			remoteInfo = ACBInfoPanel;
-		};
-		AC67FE00D0F03BC6469F8A3A31618BF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C5588D1DC14A9032268BE417DFD9E36;
+			remoteGlobalIDString = 1ADF6C231D2C742DA06733105962E882;
 			remoteInfo = CHCSVParser;
+		};
+		E43123B898A9BCC505411581D28ED531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BDAAFAFF282D451E0FB3C2BC03AB704;
+			remoteInfo = ACBInfoPanel;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03AB8940FD5B00E0110DA9E3F4EB6B78 /* CHCSVParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-umbrella.h"; sourceTree = "<group>"; };
+		0B469E46E3B6032081BF88DDC79CCBCD /* ACBInfoPanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACBInfoPanelViewController.swift; path = templates/ACBInfoPanel/ACBInfoPanelViewController.swift; sourceTree = "<group>"; };
 		0CFFA7424DE065EEBF91DC64169BE7DA /* CHCSVParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHCSVParser.xcconfig; sourceTree = "<group>"; };
+		19926233D9F574F8FC7F13CE3ECA2A84 /* CHCSVParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = CHCSVParser/CHCSVParser/CHCSVParser.m; sourceTree = "<group>"; };
+		2476E21492EF1B6036BBBA232730EE27 /* ACBInfoPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ACBInfoPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D4D675E0E16A79E06378C820E3C030 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		2C688B279EC2572256AD0920F297E37C /* ACBInfoPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACBInfoPanel-dummy.m"; sourceTree = "<group>"; };
-		491180D911278BD74268F8F6513B3792 /* CHCSVParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHCSVParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60F6F141AE2BE42953C43F1D0638857B /* ACBInfoPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACBInfoPanel-umbrella.h"; sourceTree = "<group>"; };
-		61AF4F2924E702008523E57644AC1A90 /* NSURL+ACBUrls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+ACBUrls.swift"; path = "templates/ACBInfoPanel/NSURL+ACBUrls.swift"; sourceTree = "<group>"; };
+		2E620C574447DF0F905A87D54C5E47F6 /* ACBInfoPanel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACBInfoPanel-Private.xcconfig"; sourceTree = "<group>"; };
+		2F3E8345038858356B13240392BB8088 /* CHCSVParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-umbrella.h"; sourceTree = "<group>"; };
+		3BC4A986641E764A9475A82D70984563 /* ACBInfoPanelViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ACBInfoPanelViewController.xib; path = templates/ACBInfoPanel/ACBInfoPanelViewController.xib; sourceTree = "<group>"; };
+		41E7958D36E5B435C46C3D6D1D9FD431 /* ACBInfoPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACBInfoPanel-umbrella.h"; sourceTree = "<group>"; };
+		5223D915D5C55DDC94B4B4C054AE8D45 /* ACBInfoPanelResources.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ACBInfoPanelResources.xcassets; path = templates/ACBInfoPanel/ACBInfoPanelResources.xcassets; sourceTree = "<group>"; };
 		6920BD43DB0ECA51AECD7C57866905FB /* ACBInfoPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACBInfoPanel-prefix.pch"; sourceTree = "<group>"; };
 		73BF4DA8C1ACC1F8914D26993678FBA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
 		80CF5A98FF501135DF89168CC774420F /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		841F21D826CE9A56A472811762B94E54 /* CHCSVParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHCSVParser-dummy.m"; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		8B556FDE6D264FA484E04B25ABD2CEDB /* ACBInfoPanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACBInfoPanelViewController.swift; path = templates/ACBInfoPanel/ACBInfoPanelViewController.swift; sourceTree = "<group>"; };
-		8F46D7955B2D027513017F496005ACE1 /* ACBInfoPanel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACBInfoPanel-Private.xcconfig"; sourceTree = "<group>"; };
 		93E35DC042F321069A0E6E271E4F0C43 /* ACBInfoPanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACBInfoPanel.xcconfig; sourceTree = "<group>"; };
-		9553E91B34EAD8D824D32AF180B3CDD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9CBD1AB43BD73374D03D756789D7CEB2 /* ACBInfoPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACBInfoPanel-dummy.m"; sourceTree = "<group>"; };
+		A53E2523E66E2C71B6675A2B0B8E3DC4 /* CHCSVParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = CHCSVParser/CHCSVParser/CHCSVParser.h; sourceTree = "<group>"; };
 		AD3582724E7B0C3C1DD9654A1007563C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		B827A213B7FD578320F3911A70FBA92D /* CHCSVParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = CHCSVParser/CHCSVParser/CHCSVParser.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C02CDB835A2757D2205BD0F679057C80 /* CHCSVParser-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CHCSVParser-Private.xcconfig"; sourceTree = "<group>"; };
+		C83A8125AD1AF044193F6891FD82F7E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D10F459E79B5EE20E7C1040180E4D2B9 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
 		D1698F0C4D1A976B401A01C2642ABCC3 /* CHCSVParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-prefix.pch"; sourceTree = "<group>"; };
+		D1A4EAD883747E6A9126996E30ECAE99 /* CHCSVParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHCSVParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C063661839E413586EA6EF3DA758A8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5E742A2C3780DA706B1537621BAD7E /* ACBInfoPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ACBInfoPanel.modulemap; sourceTree = "<group>"; };
 		E6BC062C2E5FBBBDE2C3378F7C59CAA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC649EC7F94BD42BDE792DAA6408B12 /* CHCSVParser-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CHCSVParser-Private.xcconfig"; sourceTree = "<group>"; };
 		EF13F80B8E30FDF571AD0D144193C978 /* CHCSVParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CHCSVParser.modulemap; sourceTree = "<group>"; };
-		F4578387BD96D5231609B2518DCA5493 /* ACBInfoPanelViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ACBInfoPanelViewController.xib; path = templates/ACBInfoPanel/ACBInfoPanelViewController.xib; sourceTree = "<group>"; };
-		F7BA1A1D3CE48215D5349624F739398F /* CHCSVParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = CHCSVParser/CHCSVParser/CHCSVParser.h; sourceTree = "<group>"; };
-		F8EDBD5D6A3EB026343CCADD825AA7DE /* ACBInfoPanelResources.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ACBInfoPanelResources.xcassets; path = templates/ACBInfoPanel/ACBInfoPanelResources.xcassets; sourceTree = "<group>"; };
-		FCAF448452F49C30A92F662AF8159A88 /* ACBInfoPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ACBInfoPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD2B10221986A45AF271A483421E4FF8 /* CHCSVParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHCSVParser-dummy.m"; sourceTree = "<group>"; };
+		FE941A7FD7E800021C4A5EEB9D4D81B0 /* NSURL+ACBUrls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+ACBUrls.swift"; path = "templates/ACBInfoPanel/NSURL+ACBUrls.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B857EF2C5E9C456BE0D775BA0599533 /* Frameworks */ = {
+		0E0112A54CFD8DC4DF956BABFDA39AA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5442C729FB073F73FB35043621B37FF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53C7008A1B498C059AFBA131B0C2CF6D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC6DD198E1AA1040E95B549CC01D3174 /* Foundation.framework in Frameworks */,
+				94E5AB3BEC2B8674CAF02B49C003E034 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,14 +96,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9D1F22A121FF6D09643C730618DFFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C511B97D308D3B02A881EF52F0A94DAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0ABB25CE74CA132AF41FAA9CCA573168 /* ACBInfoPanel */ = {
 			isa = PBXGroup;
 			children = (
-				8B556FDE6D264FA484E04B25ABD2CEDB /* ACBInfoPanelViewController.swift */,
-				61AF4F2924E702008523E57644AC1A90 /* NSURL+ACBUrls.swift */,
+				0B469E46E3B6032081BF88DDC79CCBCD /* ACBInfoPanelViewController.swift */,
+				FE941A7FD7E800021C4A5EEB9D4D81B0 /* NSURL+ACBUrls.swift */,
 				22E94967D4A9B7E5CBADD476F4A46F51 /* Resources */,
 				40F8C94577E363C1A7A63756BBFFD155 /* Support Files */,
 			);
@@ -121,8 +121,8 @@
 		22E94967D4A9B7E5CBADD476F4A46F51 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F8EDBD5D6A3EB026343CCADD825AA7DE /* ACBInfoPanelResources.xcassets */,
-				F4578387BD96D5231609B2518DCA5493 /* ACBInfoPanelViewController.xib */,
+				5223D915D5C55DDC94B4B4C054AE8D45 /* ACBInfoPanelResources.xcassets */,
+				3BC4A986641E764A9475A82D70984563 /* ACBInfoPanelViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -132,10 +132,10 @@
 			children = (
 				DE5E742A2C3780DA706B1537621BAD7E /* ACBInfoPanel.modulemap */,
 				93E35DC042F321069A0E6E271E4F0C43 /* ACBInfoPanel.xcconfig */,
-				8F46D7955B2D027513017F496005ACE1 /* ACBInfoPanel-Private.xcconfig */,
-				2C688B279EC2572256AD0920F297E37C /* ACBInfoPanel-dummy.m */,
+				2E620C574447DF0F905A87D54C5E47F6 /* ACBInfoPanel-Private.xcconfig */,
+				9CBD1AB43BD73374D03D756789D7CEB2 /* ACBInfoPanel-dummy.m */,
 				6920BD43DB0ECA51AECD7C57866905FB /* ACBInfoPanel-prefix.pch */,
-				60F6F141AE2BE42953C43F1D0638857B /* ACBInfoPanel-umbrella.h */,
+				41E7958D36E5B435C46C3D6D1D9FD431 /* ACBInfoPanel-umbrella.h */,
 				E6BC062C2E5FBBBDE2C3378F7C59CAA5 /* Info.plist */,
 			);
 			name = "Support Files";
@@ -154,7 +154,7 @@
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9553E91B34EAD8D824D32AF180B3CDD2 /* Foundation.framework */,
+				C83A8125AD1AF044193F6891FD82F7E3 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -162,8 +162,8 @@
 		66813506EA566C6987D7B4A5D67F2EA0 /* CHCSVParser */ = {
 			isa = PBXGroup;
 			children = (
-				F7BA1A1D3CE48215D5349624F739398F /* CHCSVParser.h */,
-				B827A213B7FD578320F3911A70FBA92D /* CHCSVParser.m */,
+				A53E2523E66E2C71B6675A2B0B8E3DC4 /* CHCSVParser.h */,
+				19926233D9F574F8FC7F13CE3ECA2A84 /* CHCSVParser.m */,
 				7E018317DB93C69ACBBD683F2EF3939C /* Support Files */,
 			);
 			path = CHCSVParser;
@@ -203,10 +203,10 @@
 			children = (
 				EF13F80B8E30FDF571AD0D144193C978 /* CHCSVParser.modulemap */,
 				0CFFA7424DE065EEBF91DC64169BE7DA /* CHCSVParser.xcconfig */,
-				C02CDB835A2757D2205BD0F679057C80 /* CHCSVParser-Private.xcconfig */,
-				FD2B10221986A45AF271A483421E4FF8 /* CHCSVParser-dummy.m */,
+				EBC649EC7F94BD42BDE792DAA6408B12 /* CHCSVParser-Private.xcconfig */,
+				841F21D826CE9A56A472811762B94E54 /* CHCSVParser-dummy.m */,
 				D1698F0C4D1A976B401A01C2642ABCC3 /* CHCSVParser-prefix.pch */,
-				03AB8940FD5B00E0110DA9E3F4EB6B78 /* CHCSVParser-umbrella.h */,
+				2F3E8345038858356B13240392BB8088 /* CHCSVParser-umbrella.h */,
 				73BF4DA8C1ACC1F8914D26993678FBA4 /* Info.plist */,
 			);
 			name = "Support Files";
@@ -232,8 +232,8 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCAF448452F49C30A92F662AF8159A88 /* ACBInfoPanel.framework */,
-				491180D911278BD74268F8F6513B3792 /* CHCSVParser.framework */,
+				2476E21492EF1B6036BBBA232730EE27 /* ACBInfoPanel.framework */,
+				D1A4EAD883747E6A9126996E30ECAE99 /* CHCSVParser.framework */,
 				D9C063661839E413586EA6EF3DA758A8 /* Pods.framework */,
 			);
 			name = Products;
@@ -242,6 +242,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0D414DEC2EA5A0DF046594D000D17461 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8E05DA77AA71C9428B40A63DBD7072 /* ACBInfoPanel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53CFADCF8CD3358CE2162F5D1B9B4CD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,42 +258,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA30D344C4039148DDB00E07B2B3A450 /* Headers */ = {
+		ECB34A5B04AD4AA4282BC35C10F65445 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0D822B294D4F3ABB2972A8D572C40E7 /* CHCSVParser-umbrella.h in Headers */,
-				9259CBB9BE4786F20CB4FF4A3E95CA40 /* CHCSVParser.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF689B0ABC55404B3490BB350769089F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BEA3A0949120D9F20487B4B14D1B2653 /* ACBInfoPanel-umbrella.h in Headers */,
+				8B3536870FF1561F93DAE5A0AB285D54 /* CHCSVParser-umbrella.h in Headers */,
+				8BC3474B986287BCB61138F601D105FD /* CHCSVParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		19C136CABCEA95445445DC79AB711034 /* ACBInfoPanel */ = {
+		1ADF6C231D2C742DA06733105962E882 /* CHCSVParser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CB904AE2652CAC55846DA62603D8365 /* Build configuration list for PBXNativeTarget "ACBInfoPanel" */;
+			buildConfigurationList = DD9D72A248E8544AAF60CA663A1B0BCE /* Build configuration list for PBXNativeTarget "CHCSVParser" */;
 			buildPhases = (
-				1062E7AE150E00EA1E74D2EEF72946AB /* Sources */,
-				53C7008A1B498C059AFBA131B0C2CF6D /* Frameworks */,
-				B602690FB2836465A7EE954476AC8B8F /* Resources */,
-				FF689B0ABC55404B3490BB350769089F /* Headers */,
+				FE560E741CB59754061C4211B3510499 /* Sources */,
+				0E0112A54CFD8DC4DF956BABFDA39AA8 /* Frameworks */,
+				ECB34A5B04AD4AA4282BC35C10F65445 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ACBInfoPanel;
-			productName = ACBInfoPanel;
-			productReference = FCAF448452F49C30A92F662AF8159A88 /* ACBInfoPanel.framework */;
+			name = CHCSVParser;
+			productName = CHCSVParser;
+			productReference = D1A4EAD883747E6A9126996E30ECAE99 /* CHCSVParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		28617539440F7A6E49235DDAAE3D2AE8 /* Pods */ = {
@@ -299,29 +298,30 @@
 			buildRules = (
 			);
 			dependencies = (
-				34C29BFC1EEBF50755AA3789458AE3CF /* PBXTargetDependency */,
-				DA4175C0A175DBFAF8300BB915843382 /* PBXTargetDependency */,
+				978B155D621AA7FCED53FBD900A7EFD9 /* PBXTargetDependency */,
+				831BB183CA4EAA67817E9DA33C74B5F3 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
 			productReference = D9C063661839E413586EA6EF3DA758A8 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6C5588D1DC14A9032268BE417DFD9E36 /* CHCSVParser */ = {
+		8BDAAFAFF282D451E0FB3C2BC03AB704 /* ACBInfoPanel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DFC869D84C783FA4F8500E5640C4FBF /* Build configuration list for PBXNativeTarget "CHCSVParser" */;
+			buildConfigurationList = 9266650DF2E1C40D21F2377208D32FDC /* Build configuration list for PBXNativeTarget "ACBInfoPanel" */;
 			buildPhases = (
-				3710929219502A6805499F2AA3834A7C /* Sources */,
-				1B857EF2C5E9C456BE0D775BA0599533 /* Frameworks */,
-				DA30D344C4039148DDB00E07B2B3A450 /* Headers */,
+				B78FD45D12F5EF4B507F259D52F8FAD3 /* Sources */,
+				F9D1F22A121FF6D09643C730618DFFC1 /* Frameworks */,
+				D469853888ED22AE36D033072F2FCB93 /* Resources */,
+				0D414DEC2EA5A0DF046594D000D17461 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CHCSVParser;
-			productName = CHCSVParser;
-			productReference = 491180D911278BD74268F8F6513B3792 /* CHCSVParser.framework */;
+			name = ACBInfoPanel;
+			productName = ACBInfoPanel;
+			productReference = 2476E21492EF1B6036BBBA232730EE27 /* ACBInfoPanel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -345,45 +345,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19C136CABCEA95445445DC79AB711034 /* ACBInfoPanel */,
-				6C5588D1DC14A9032268BE417DFD9E36 /* CHCSVParser */,
+				8BDAAFAFF282D451E0FB3C2BC03AB704 /* ACBInfoPanel */,
+				1ADF6C231D2C742DA06733105962E882 /* CHCSVParser */,
 				28617539440F7A6E49235DDAAE3D2AE8 /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B602690FB2836465A7EE954476AC8B8F /* Resources */ = {
+		D469853888ED22AE36D033072F2FCB93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443B0A66F2BE7B46DF40A3B848D4B650 /* ACBInfoPanelResources.xcassets in Resources */,
-				89485D59B5D2CBB56B012B42C8CB7B10 /* ACBInfoPanelViewController.xib in Resources */,
+				B10ACDA3FF14D6F37273DC57AF1315F8 /* ACBInfoPanelResources.xcassets in Resources */,
+				946D15248D70431A89B8758698AAA3BC /* ACBInfoPanelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1062E7AE150E00EA1E74D2EEF72946AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21B5AAEFB14A9C94CD1B992EEC3A0005 /* ACBInfoPanel-dummy.m in Sources */,
-				71213AB89068E62D403EBD4DFA03EB96 /* ACBInfoPanelViewController.swift in Sources */,
-				159B36CF8318139082F796D078DFC779 /* NSURL+ACBUrls.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3710929219502A6805499F2AA3834A7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9402227F6813C26C378084DA5209FAC8 /* CHCSVParser-dummy.m in Sources */,
-				3685A6C20F02280C682DE9130AE737D9 /* CHCSVParser.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3A79D791AE0F377FABAD356196768627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,20 +373,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B78FD45D12F5EF4B507F259D52F8FAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F195313466EC735E817F0A616BC17B /* ACBInfoPanel-dummy.m in Sources */,
+				00B66D19FAC11CFDC229447C7C2257E2 /* ACBInfoPanelViewController.swift in Sources */,
+				DC30704FA27830A897B861479D5F5F69 /* NSURL+ACBUrls.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE560E741CB59754061C4211B3510499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E5AD29B2DFF3133D8D89662F7719B33 /* CHCSVParser-dummy.m in Sources */,
+				3C89F00EFCD50CD0DC6D8178532C97CB /* CHCSVParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		34C29BFC1EEBF50755AA3789458AE3CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ACBInfoPanel;
-			target = 19C136CABCEA95445445DC79AB711034 /* ACBInfoPanel */;
-			targetProxy = 6B1DA0A992ECB000CC88146DE2D14B29 /* PBXContainerItemProxy */;
-		};
-		DA4175C0A175DBFAF8300BB915843382 /* PBXTargetDependency */ = {
+		831BB183CA4EAA67817E9DA33C74B5F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CHCSVParser;
-			target = 6C5588D1DC14A9032268BE417DFD9E36 /* CHCSVParser */;
-			targetProxy = AC67FE00D0F03BC6469F8A3A31618BF8 /* PBXContainerItemProxy */;
+			target = 1ADF6C231D2C742DA06733105962E882 /* CHCSVParser */;
+			targetProxy = A68A84655E210DBBD3F34337BC677799 /* PBXContainerItemProxy */;
+		};
+		978B155D621AA7FCED53FBD900A7EFD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACBInfoPanel;
+			target = 8BDAAFAFF282D451E0FB3C2BC03AB704 /* ACBInfoPanel */;
+			targetProxy = E43123B898A9BCC505411581D28ED531 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -439,9 +439,9 @@
 			};
 			name = Release;
 		};
-		11570C5CE16EAEB1E6FDE6EAB487B8CB /* Release */ = {
+		0A9AB043B1D0A00522BF0DEE5A3D3EAE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F46D7955B2D027513017F496005ACE1 /* ACBInfoPanel-Private.xcconfig */;
+			baseConfigurationReference = 2E620C574447DF0F905A87D54C5E47F6 /* ACBInfoPanel-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.0.1;
@@ -456,19 +456,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ACBInfoPanel/ACBInfoPanel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = ACBInfoPanel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		190662379C52B035B49D1BF54C211BCB /* Release */ = {
+		454F86B01A23CB9B0E55407C051D2CDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C02CDB835A2757D2205BD0F679057C80 /* CHCSVParser-Private.xcconfig */;
+			baseConfigurationReference = EBC649EC7F94BD42BDE792DAA6408B12 /* CHCSVParser-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.1.0;
@@ -527,28 +528,27 @@
 			};
 			name = Release;
 		};
-		713EC26155712135DDE7FA23F2EC1456 /* Debug */ = {
+		6199325BE09BF4BD5B0B9A58CDE9F939 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F46D7955B2D027513017F496005ACE1 /* ACBInfoPanel-Private.xcconfig */;
+			baseConfigurationReference = EBC649EC7F94BD42BDE792DAA6408B12 /* CHCSVParser-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.0.1;
+				CURRENT_PROJECT_VERSION = 2.1.0;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
+				DYLIB_COMPATIBILITY_VERSION = 2;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ACBInfoPanel/ACBInfoPanel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ACBInfoPanel/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CHCSVParser/CHCSVParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHCSVParser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ACBInfoPanel/ACBInfoPanel.modulemap";
+				MODULEMAP_FILE = "Target Support Files/CHCSVParser/CHCSVParser.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ACBInfoPanel;
+				PRODUCT_NAME = CHCSVParser;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -584,6 +584,33 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A3D843E83C5A4EDFDD6E53DA8037C983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E620C574447DF0F905A87D54C5E47F6 /* ACBInfoPanel-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ACBInfoPanel/ACBInfoPanel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACBInfoPanel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ACBInfoPanel/ACBInfoPanel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ACBInfoPanel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -624,45 +651,9 @@
 			};
 			name = Debug;
 		};
-		E2CC86423C3BA4BAD782E1B50166869D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C02CDB835A2757D2205BD0F679057C80 /* CHCSVParser-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CHCSVParser/CHCSVParser-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CHCSVParser/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CHCSVParser/CHCSVParser.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CHCSVParser;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CB904AE2652CAC55846DA62603D8365 /* Build configuration list for PBXNativeTarget "ACBInfoPanel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				713EC26155712135DDE7FA23F2EC1456 /* Debug */,
-				11570C5CE16EAEB1E6FDE6EAB487B8CB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -672,11 +663,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DFC869D84C783FA4F8500E5640C4FBF /* Build configuration list for PBXNativeTarget "CHCSVParser" */ = {
+		9266650DF2E1C40D21F2377208D32FDC /* Build configuration list for PBXNativeTarget "ACBInfoPanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2CC86423C3BA4BAD782E1B50166869D /* Debug */,
-				190662379C52B035B49D1BF54C211BCB /* Release */,
+				0A9AB043B1D0A00522BF0DEE5A3D3EAE /* Debug */,
+				A3D843E83C5A4EDFDD6E53DA8037C983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9D72A248E8544AAF60CA663A1B0BCE /* Build configuration list for PBXNativeTarget "CHCSVParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6199325BE09BF4BD5B0B9A58CDE9F939 /* Debug */,
+				454F86B01A23CB9B0E55407C051D2CDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
